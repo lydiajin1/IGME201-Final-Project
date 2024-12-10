@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGME201_Final_Project", "IGME201_Final_Project.csproj", "{BADC5DE1-DBD6-4E06-AEB3-252F27910448}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BADC5DE1-DBD6-4E06-AEB3-252F27910448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADC5DE1-DBD6-4E06-AEB3-252F27910448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADC5DE1-DBD6-4E06-AEB3-252F27910448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADC5DE1-DBD6-4E06-AEB3-252F27910448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C04DB83-EF19-4155-AA7D-8A23D0DABD41}
+	EndGlobalSection
+EndGlobal
