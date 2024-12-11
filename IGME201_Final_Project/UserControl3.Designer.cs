@@ -1,6 +1,6 @@
 ﻿namespace IGME201_Final_Project
 {
-    partial class UserControl2
+    partial class UserControl3
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,19 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // UserControl2
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(328, 255);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Test";
+            // 
+            // UserControl3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
-            this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(897, 823);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Controls.Add(this.textBox1);
+            this.Name = "UserControl3";
+            this.Size = new System.Drawing.Size(834, 774);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

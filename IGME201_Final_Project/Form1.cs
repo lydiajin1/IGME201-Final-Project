@@ -58,11 +58,50 @@ namespace IGME201_Final_Project
 
         }
 
-        private void CreateAcc_Click_1(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Homebtn_Click(object sender, EventArgs e)
         {
             userControl11.Show();
             userControl21.Hide();
+            userControl31.Hide();
+            userControl41.Hide();
+            userControl11.BringToFront();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void Menubtn_Click(object sender, EventArgs e)
+        {
+            userControl21.Show();
+            userControl11.Hide();
+            userControl31.Hide();
+            userControl41.Hide();
             userControl21.BringToFront();
+        }
+
+        private void Cartbtn_Click(object sender, EventArgs e)
+        {
+            userControl31.Show();
+            userControl11.Hide();
+            userControl21.Hide();
+            userControl41.Hide();
+            userControl31.BringToFront();
+        }
+
+        private void Checkoutbtn_Click(object sender, EventArgs e)
+        {
+            userControl41.Show();
+            userControl11.Hide();
+            userControl21.Hide();
+            userControl31.Hide();
+            userControl41.BringToFront();
         }
     }
 }

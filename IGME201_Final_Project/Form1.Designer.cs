@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.accQuestion = new System.Windows.Forms.Label();
-            this.CreateAcc = new System.Windows.Forms.Button();
-            this.LoginTitle = new System.Windows.Forms.Label();
-            this.loginConfirm = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Username = new System.Windows.Forms.Label();
-            this.Password = new System.Windows.Forms.Label();
-            this.PasswordTypeBox = new System.Windows.Forms.TextBox();
+            this.Homebtn = new System.Windows.Forms.Button();
+            this.Menubtn = new System.Windows.Forms.Button();
+            this.Cartbtn = new System.Windows.Forms.Button();
+            this.Checkoutbtn = new System.Windows.Forms.Button();
+            this.userControl41 = new IGME201_Final_Project.UserControl4();
+            this.userControl31 = new IGME201_Final_Project.UserControl3();
             this.userControl21 = new IGME201_Final_Project.UserControl2();
             this.userControl11 = new IGME201_Final_Project.UserControl1();
             this.panel1.SuspendLayout();
@@ -44,141 +42,118 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.accQuestion);
-            this.panel1.Controls.Add(this.CreateAcc);
-            this.panel1.Controls.Add(this.LoginTitle);
-            this.panel1.Controls.Add(this.loginConfirm);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.Username);
-            this.panel1.Controls.Add(this.Password);
-            this.panel1.Controls.Add(this.PasswordTypeBox);
-            this.panel1.Location = new System.Drawing.Point(0, -2);
+            this.panel1.Controls.Add(this.Checkoutbtn);
+            this.panel1.Controls.Add(this.Cartbtn);
+            this.panel1.Controls.Add(this.Menubtn);
+            this.panel1.Controls.Add(this.Homebtn);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1255, 962);
-            this.panel1.TabIndex = 2;
+            this.panel1.Size = new System.Drawing.Size(1255, 100);
+            this.panel1.TabIndex = 0;
             // 
-            // accQuestion
+            // Homebtn
             // 
-            this.accQuestion.AutoSize = true;
-            this.accQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.accQuestion.Location = new System.Drawing.Point(433, 691);
-            this.accQuestion.Name = "accQuestion";
-            this.accQuestion.Size = new System.Drawing.Size(388, 29);
-            this.accQuestion.TabIndex = 23;
-            this.accQuestion.Text = "Don\'t have an account? Create one!";
+            this.Homebtn.Location = new System.Drawing.Point(61, 30);
+            this.Homebtn.Name = "Homebtn";
+            this.Homebtn.Size = new System.Drawing.Size(109, 36);
+            this.Homebtn.TabIndex = 0;
+            this.Homebtn.Text = "Home";
+            this.Homebtn.UseVisualStyleBackColor = true;
+            this.Homebtn.Click += new System.EventHandler(this.Homebtn_Click);
             // 
-            // CreateAcc
+            // Menubtn
             // 
-            this.CreateAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.CreateAcc.Location = new System.Drawing.Point(472, 754);
-            this.CreateAcc.Name = "CreateAcc";
-            this.CreateAcc.Size = new System.Drawing.Size(294, 53);
-            this.CreateAcc.TabIndex = 22;
-            this.CreateAcc.Text = "Create an Account";
-            this.CreateAcc.UseVisualStyleBackColor = true;
-            this.CreateAcc.Click += new System.EventHandler(this.CreateAcc_Click_1);
+            this.Menubtn.Location = new System.Drawing.Point(313, 21);
+            this.Menubtn.Name = "Menubtn";
+            this.Menubtn.Size = new System.Drawing.Size(116, 45);
+            this.Menubtn.TabIndex = 1;
+            this.Menubtn.Text = "Menu";
+            this.Menubtn.UseVisualStyleBackColor = true;
+            this.Menubtn.Click += new System.EventHandler(this.Menubtn_Click);
             // 
-            // LoginTitle
+            // Cartbtn
             // 
-            this.LoginTitle.AutoSize = true;
-            this.LoginTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.LoginTitle.Location = new System.Drawing.Point(480, 155);
-            this.LoginTitle.Name = "LoginTitle";
-            this.LoginTitle.Size = new System.Drawing.Size(212, 82);
-            this.LoginTitle.TabIndex = 21;
-            this.LoginTitle.Text = "Login";
+            this.Cartbtn.Location = new System.Drawing.Point(636, 24);
+            this.Cartbtn.Name = "Cartbtn";
+            this.Cartbtn.Size = new System.Drawing.Size(102, 51);
+            this.Cartbtn.TabIndex = 2;
+            this.Cartbtn.Text = "Cart";
+            this.Cartbtn.UseVisualStyleBackColor = true;
+            this.Cartbtn.Click += new System.EventHandler(this.Cartbtn_Click);
             // 
-            // loginConfirm
+            // Checkoutbtn
             // 
-            this.loginConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.loginConfirm.Location = new System.Drawing.Point(535, 569);
-            this.loginConfirm.Name = "loginConfirm";
-            this.loginConfirm.Size = new System.Drawing.Size(165, 57);
-            this.loginConfirm.TabIndex = 20;
-            this.loginConfirm.Text = "Login";
-            this.loginConfirm.UseVisualStyleBackColor = true;
+            this.Checkoutbtn.Location = new System.Drawing.Point(871, 25);
+            this.Checkoutbtn.Name = "Checkoutbtn";
+            this.Checkoutbtn.Size = new System.Drawing.Size(166, 36);
+            this.Checkoutbtn.TabIndex = 3;
+            this.Checkoutbtn.Text = "Checkout";
+            this.Checkoutbtn.UseVisualStyleBackColor = true;
+            this.Checkoutbtn.Click += new System.EventHandler(this.Checkoutbtn_Click);
             // 
-            // textBox1
+            // userControl41
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.textBox1.Location = new System.Drawing.Point(472, 366);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(307, 48);
-            this.textBox1.TabIndex = 19;
+            this.userControl41.BackColor = System.Drawing.SystemColors.ControlText;
+            this.userControl41.Location = new System.Drawing.Point(0, 95);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1255, 870);
+            this.userControl41.TabIndex = 1;
             // 
-            // Username
+            // userControl31
             // 
-            this.Username.AutoSize = true;
-            this.Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.Username.Location = new System.Drawing.Point(462, 323);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(183, 40);
-            this.Username.TabIndex = 18;
-            this.Username.Text = "Username";
-            // 
-            // Password
-            // 
-            this.Password.AutoSize = true;
-            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.Password.Location = new System.Drawing.Point(465, 427);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(175, 40);
-            this.Password.TabIndex = 17;
-            this.Password.Text = "Password";
-            // 
-            // PasswordTypeBox
-            // 
-            this.PasswordTypeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.PasswordTypeBox.Location = new System.Drawing.Point(472, 478);
-            this.PasswordTypeBox.Name = "PasswordTypeBox";
-            this.PasswordTypeBox.Size = new System.Drawing.Size(307, 48);
-            this.PasswordTypeBox.TabIndex = 16;
+            this.userControl31.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.userControl31.Location = new System.Drawing.Point(0, 95);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(1265, 870);
+            this.userControl31.TabIndex = 2;
             // 
             // userControl21
             // 
             this.userControl21.BackColor = System.Drawing.Color.CadetBlue;
-            this.userControl21.Location = new System.Drawing.Point(0, -2);
+            this.userControl21.Location = new System.Drawing.Point(0, 95);
             this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(1256, 972);
-            this.userControl21.TabIndex = 1;
+            this.userControl21.Size = new System.Drawing.Size(1255, 870);
+            this.userControl21.TabIndex = 3;
             // 
             // userControl11
             // 
             this.userControl11.BackColor = System.Drawing.Color.Chocolate;
-            this.userControl11.Location = new System.Drawing.Point(0, -2);
+            this.userControl11.Location = new System.Drawing.Point(0, 95);
             this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(1256, 972);
-            this.userControl11.TabIndex = 0;
+            this.userControl11.Size = new System.Drawing.Size(1255, 870);
+            this.userControl11.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1255, 961);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.userControl21);
             this.Controls.Add(this.userControl11);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl31);
+            this.Controls.Add(this.userControl41);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private UserControl1 userControl11;
-        private UserControl2 userControl21;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label accQuestion;
-        private System.Windows.Forms.Button CreateAcc;
-        private System.Windows.Forms.Label LoginTitle;
-        private System.Windows.Forms.Button loginConfirm;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Username;
-        private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.TextBox PasswordTypeBox;
+        private System.Windows.Forms.Button Checkoutbtn;
+        private System.Windows.Forms.Button Cartbtn;
+        private System.Windows.Forms.Button Menubtn;
+        private System.Windows.Forms.Button Homebtn;
+        private UserControl4 userControl41;
+        private UserControl3 userControl31;
+        private UserControl2 userControl21;
+        private UserControl1 userControl11;
     }
 }
 

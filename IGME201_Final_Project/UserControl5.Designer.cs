@@ -1,6 +1,6 @@
 ﻿namespace IGME201_Final_Project
 {
-    partial class UserControl2
+    partial class UserControl5
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // UserControl2
+            // UserControl5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
-            this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(897, 823);
+            this.BackColor = System.Drawing.Color.Cornsilk;
+            this.Name = "UserControl5";
+            this.Size = new System.Drawing.Size(894, 975);
             this.ResumeLayout(false);
 
         }
