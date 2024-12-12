@@ -16,5 +16,10 @@ namespace IGME201_Final_Project
         {
             InitializeComponent();
         }
+
+        private void Thanks_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
