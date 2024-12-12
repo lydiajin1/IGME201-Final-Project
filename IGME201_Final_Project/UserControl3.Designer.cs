@@ -28,32 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CartTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // CartTitle
             // 
-            this.textBox1.Location = new System.Drawing.Point(328, 255);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Test";
+            this.CartTitle.AutoSize = true;
+            this.CartTitle.Font = new System.Drawing.Font("Berlin Sans FB", 48F);
+            this.CartTitle.ForeColor = System.Drawing.Color.Cornsilk;
+            this.CartTitle.Location = new System.Drawing.Point(335, 32);
+            this.CartTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CartTitle.Name = "CartTitle";
+            this.CartTitle.Size = new System.Drawing.Size(146, 71);
+            this.CartTitle.TabIndex = 32;
+            this.CartTitle.Text = "Cart";
+            this.CartTitle.Click += new System.EventHandler(this.MenuTitle_Click);
             // 
             // UserControl3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Controls.Add(this.textBox1);
+            this.BackColor = System.Drawing.Color.Chocolate;
+            this.Controls.Add(this.CartTitle);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControl3";
-            this.Size = new System.Drawing.Size(1255, 870);
+            this.Size = new System.Drawing.Size(837, 566);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label CartTitle;
     }
 }

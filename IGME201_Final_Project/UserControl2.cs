@@ -56,5 +56,10 @@ namespace IGME201_Final_Project
         {
 
         }
+
+        private void MenuTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

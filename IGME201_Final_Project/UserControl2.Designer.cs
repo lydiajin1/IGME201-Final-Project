@@ -28,34 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.MenuTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // MenuTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(609, 425);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "test";
+            this.MenuTitle.AutoSize = true;
+            this.MenuTitle.Font = new System.Drawing.Font("Berlin Sans FB", 48F);
+            this.MenuTitle.ForeColor = System.Drawing.Color.Cornsilk;
+            this.MenuTitle.Location = new System.Drawing.Point(321, 32);
+            this.MenuTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuTitle.Name = "MenuTitle";
+            this.MenuTitle.Size = new System.Drawing.Size(178, 71);
+            this.MenuTitle.TabIndex = 31;
+            this.MenuTitle.Text = "Menu";
+            this.MenuTitle.Click += new System.EventHandler(this.MenuTitle_Click);
             // 
             // UserControl2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.Chocolate;
+            this.Controls.Add(this.MenuTitle);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(1255, 870);
+            this.Size = new System.Drawing.Size(837, 566);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label MenuTitle;
     }
 }
