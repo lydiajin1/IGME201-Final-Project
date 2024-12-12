@@ -90,16 +90,19 @@ namespace IGME201_Final_Project
 
         }
 
+        private ErrorProvider errorProvider = new ErrorProvider();
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //firstname
             String input = textBox1.Text;
             if (input.Length > 0 && !input.All(char.IsDigit))
             {
+                errorProvider.SetError(textBox1, "");
                 FirstName = true; 
             }
             else
             {
+                errorProvider.SetError(textBox1, "Must be at least 1 letter");
                 FirstName = false; 
             }
         }
@@ -110,10 +113,12 @@ namespace IGME201_Final_Project
             String input = textBox2.Text;
             if (input.Length > 0 && !input.All(char.IsDigit))
             {
+                errorProvider.SetError(textBox2, "");
                 LastName = true;
             }
             else
             {
+                errorProvider.SetError(textBox2, "Must be at least 1 letter");
                 LastName = false;
             }
         }
@@ -124,10 +129,12 @@ namespace IGME201_Final_Project
             String input = textBox3.Text;
             if (input.Length > 15 && input.All(char.IsDigit))
             {
+                errorProvider.SetError(textBox3, "");
                 CardNum = true;
             }
             else
             {
+                errorProvider.SetError(textBox3, "Must be at least 15 digits");
                 CardNum = false;
             }
         }
@@ -138,10 +145,12 @@ namespace IGME201_Final_Project
             String input = textBox4.Text;
             if (input.Length > 4 && input.Contains("/"))
             {
+                errorProvider.SetError(textBox4, "");
                 ExpDate = true;
             }
             else
             {
+                errorProvider.SetError(textBox4, "Must be at valid date using /");
                 ExpDate = false;
             }
         }
@@ -152,10 +161,12 @@ namespace IGME201_Final_Project
             String input = textBox5.Text;
             if (input.Length > 2 && input.All(char.IsDigit))
             {
+                errorProvider.SetError(textBox5, "");
                 CVC = true;
             }
             else
             {
+                errorProvider.SetError(textBox5, "Must be at least 3 digits");
                 CVC = false;
             }
         }
