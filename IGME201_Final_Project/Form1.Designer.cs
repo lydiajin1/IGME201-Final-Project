@@ -56,6 +56,7 @@
             // 
             // Checkoutbtn
             // 
+            this.Checkoutbtn.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.Checkoutbtn.Location = new System.Drawing.Point(657, 14);
             this.Checkoutbtn.Margin = new System.Windows.Forms.Padding(2);
             this.Checkoutbtn.Name = "Checkoutbtn";
@@ -67,6 +68,7 @@
             // 
             // Cartbtn
             // 
+            this.Cartbtn.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.Cartbtn.Location = new System.Drawing.Point(472, 14);
             this.Cartbtn.Margin = new System.Windows.Forms.Padding(2);
             this.Cartbtn.Name = "Cartbtn";
@@ -78,6 +80,7 @@
             // 
             // Menubtn
             // 
+            this.Menubtn.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.Menubtn.Location = new System.Drawing.Point(287, 14);
             this.Menubtn.Margin = new System.Windows.Forms.Padding(2);
             this.Menubtn.Name = "Menubtn";
@@ -89,6 +92,7 @@
             // 
             // Homebtn
             // 
+            this.Homebtn.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.Homebtn.Location = new System.Drawing.Point(102, 14);
             this.Homebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Homebtn.Name = "Homebtn";
