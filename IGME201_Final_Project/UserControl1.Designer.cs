@@ -193,27 +193,28 @@
             // UsernameCreateAcclabel
             // 
             this.UsernameCreateAcclabel.AutoSize = true;
-            this.UsernameCreateAcclabel.Font = new System.Drawing.Font("Berlin Sans FB", 13F);
+            this.UsernameCreateAcclabel.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.UsernameCreateAcclabel.ForeColor = System.Drawing.Color.Cornsilk;
             this.UsernameCreateAcclabel.Location = new System.Drawing.Point(505, 333);
             this.UsernameCreateAcclabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UsernameCreateAcclabel.Name = "UsernameCreateAcclabel";
-            this.UsernameCreateAcclabel.Size = new System.Drawing.Size(484, 20);
+            this.UsernameCreateAcclabel.Size = new System.Drawing.Size(243, 54);
             this.UsernameCreateAcclabel.TabIndex = 28;
-            this.UsernameCreateAcclabel.Text = "Must begin with a capital letter and be between 3-16 characters\r\n";
+            this.UsernameCreateAcclabel.Text = "Must begin with a capital letter and \r\nbe between 3-16 characters\r\n\r\n";
+            this.UsernameCreateAcclabel.Click += new System.EventHandler(this.UsernameCreateAcclabel_Click);
             // 
             // CreatePasswordlbl
             // 
             this.CreatePasswordlbl.AutoSize = true;
-            this.CreatePasswordlbl.Font = new System.Drawing.Font("Berlin Sans FB", 13F);
+            this.CreatePasswordlbl.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.CreatePasswordlbl.ForeColor = System.Drawing.Color.Cornsilk;
             this.CreatePasswordlbl.Location = new System.Drawing.Point(505, 442);
             this.CreatePasswordlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CreatePasswordlbl.Name = "CreatePasswordlbl";
-            this.CreatePasswordlbl.Size = new System.Drawing.Size(685, 20);
+            this.CreatePasswordlbl.Size = new System.Drawing.Size(274, 54);
             this.CreatePasswordlbl.TabIndex = 29;
-            this.CreatePasswordlbl.Text = "Must be at least 8 characters and include at least one letter, number, and specia" +
-    "l character";
+            this.CreatePasswordlbl.Text = "Must be at least 8 characters and include \r\nat least one letter, number, and spec" +
+    "ial \r\ncharacter";
             // 
             // Title
             // 
@@ -241,13 +242,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.CreatePasswordlbl);
             this.Controls.Add(this.UsernameCreateAcclabel);
             this.Controls.Add(this.Cofirmbtn);
             this.Controls.Add(this.CreateAccPasswordtxtbox);
             this.Controls.Add(this.CreateAccUsernametxtbox);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.UsernameCreateAccLbl);
             this.Controls.Add(this.accQuestion);
             this.Controls.Add(this.LoginTitle);

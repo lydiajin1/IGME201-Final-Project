@@ -75,5 +75,10 @@ namespace IGME201_Final_Project
                 createAcctPasswordError.Clear();
             }
         }
+
+        private void UsernameCreateAcclabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

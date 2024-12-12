@@ -49,7 +49,7 @@
             this.panel1.Controls.Add(this.Homebtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 65);
             this.panel1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // Checkoutbtn
             // 
             this.Checkoutbtn.Location = new System.Drawing.Point(657, 14);
-            this.Checkoutbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Checkoutbtn.Margin = new System.Windows.Forms.Padding(2);
             this.Checkoutbtn.Name = "Checkoutbtn";
             this.Checkoutbtn.Size = new System.Drawing.Size(80, 34);
             this.Checkoutbtn.TabIndex = 3;
@@ -68,7 +68,7 @@
             // Cartbtn
             // 
             this.Cartbtn.Location = new System.Drawing.Point(472, 14);
-            this.Cartbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cartbtn.Margin = new System.Windows.Forms.Padding(2);
             this.Cartbtn.Name = "Cartbtn";
             this.Cartbtn.Size = new System.Drawing.Size(80, 34);
             this.Cartbtn.TabIndex = 2;
@@ -79,7 +79,7 @@
             // Menubtn
             // 
             this.Menubtn.Location = new System.Drawing.Point(287, 14);
-            this.Menubtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Menubtn.Margin = new System.Windows.Forms.Padding(2);
             this.Menubtn.Name = "Menubtn";
             this.Menubtn.Size = new System.Drawing.Size(80, 34);
             this.Menubtn.TabIndex = 1;
@@ -90,7 +90,7 @@
             // Homebtn
             // 
             this.Homebtn.Location = new System.Drawing.Point(102, 14);
-            this.Homebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Homebtn.Name = "Homebtn";
             this.Homebtn.Size = new System.Drawing.Size(80, 34);
             this.Homebtn.TabIndex = 0;
@@ -146,7 +146,7 @@
             this.Controls.Add(this.userControl31);
             this.Controls.Add(this.userControl41);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
