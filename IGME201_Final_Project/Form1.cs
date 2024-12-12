@@ -103,5 +103,10 @@ namespace IGME201_Final_Project
             userControl31.Hide();
             userControl41.BringToFront();
         }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

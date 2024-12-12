@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.accQuestion = new System.Windows.Forms.Label();
-            this.CreateAcc = new System.Windows.Forms.Button();
             this.LoginTitle = new System.Windows.Forms.Label();
             this.loginConfirm = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -47,16 +46,6 @@
             this.accQuestion.Size = new System.Drawing.Size(388, 29);
             this.accQuestion.TabIndex = 15;
             this.accQuestion.Text = "Don\'t have an account? Create one!";
-            // 
-            // CreateAcc
-            // 
-            this.CreateAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.CreateAcc.Location = new System.Drawing.Point(445, 786);
-            this.CreateAcc.Name = "CreateAcc";
-            this.CreateAcc.Size = new System.Drawing.Size(294, 53);
-            this.CreateAcc.TabIndex = 14;
-            this.CreateAcc.Text = "Create an Account";
-            this.CreateAcc.UseVisualStyleBackColor = true;
             // 
             // LoginTitle
             // 
@@ -120,7 +109,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1201, 1027);
             this.Controls.Add(this.accQuestion);
-            this.Controls.Add(this.CreateAcc);
             this.Controls.Add(this.LoginTitle);
             this.Controls.Add(this.loginConfirm);
             this.Controls.Add(this.textBox1);
@@ -137,7 +125,6 @@
         #endregion
 
         private System.Windows.Forms.Label accQuestion;
-        private System.Windows.Forms.Button CreateAcc;
         private System.Windows.Forms.Label LoginTitle;
         private System.Windows.Forms.Button loginConfirm;
         private System.Windows.Forms.TextBox textBox1;

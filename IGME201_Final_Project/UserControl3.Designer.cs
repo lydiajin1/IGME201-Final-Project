@@ -46,7 +46,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.textBox1);
             this.Name = "UserControl3";
-            this.Size = new System.Drawing.Size(834, 774);
+            this.Size = new System.Drawing.Size(1255, 870);
             this.ResumeLayout(false);
             this.PerformLayout();
 

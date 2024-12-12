@@ -33,10 +33,10 @@
             this.Menubtn = new System.Windows.Forms.Button();
             this.Cartbtn = new System.Windows.Forms.Button();
             this.Checkoutbtn = new System.Windows.Forms.Button();
-            this.userControl41 = new IGME201_Final_Project.UserControl4();
-            this.userControl31 = new IGME201_Final_Project.UserControl3();
-            this.userControl21 = new IGME201_Final_Project.UserControl2();
             this.userControl11 = new IGME201_Final_Project.UserControl1();
+            this.userControl21 = new IGME201_Final_Project.UserControl2();
+            this.userControl31 = new IGME201_Final_Project.UserControl3();
+            this.userControl41 = new IGME201_Final_Project.UserControl4();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,21 +92,14 @@
             this.Checkoutbtn.UseVisualStyleBackColor = true;
             this.Checkoutbtn.Click += new System.EventHandler(this.Checkoutbtn_Click);
             // 
-            // userControl41
+            // userControl11
             // 
-            this.userControl41.BackColor = System.Drawing.SystemColors.ControlText;
-            this.userControl41.Location = new System.Drawing.Point(0, 95);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(1255, 870);
-            this.userControl41.TabIndex = 1;
-            // 
-            // userControl31
-            // 
-            this.userControl31.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.userControl31.Location = new System.Drawing.Point(0, 95);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(1265, 870);
-            this.userControl31.TabIndex = 2;
+            this.userControl11.BackColor = System.Drawing.Color.Chocolate;
+            this.userControl11.Location = new System.Drawing.Point(0, 95);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(1255, 870);
+            this.userControl11.TabIndex = 4;
+            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
             // 
             // userControl21
             // 
@@ -116,13 +109,21 @@
             this.userControl21.Size = new System.Drawing.Size(1255, 870);
             this.userControl21.TabIndex = 3;
             // 
-            // userControl11
+            // userControl31
             // 
-            this.userControl11.BackColor = System.Drawing.Color.Chocolate;
-            this.userControl11.Location = new System.Drawing.Point(0, 95);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(1255, 870);
-            this.userControl11.TabIndex = 4;
+            this.userControl31.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.userControl31.Location = new System.Drawing.Point(0, 95);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(1265, 870);
+            this.userControl31.TabIndex = 2;
+            // 
+            // userControl41
+            // 
+            this.userControl41.BackColor = System.Drawing.SystemColors.ControlText;
+            this.userControl41.Location = new System.Drawing.Point(0, 95);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1255, 870);
+            this.userControl41.TabIndex = 1;
             // 
             // Form1
             // 

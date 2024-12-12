@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(897, 823);
+            this.Size = new System.Drawing.Size(1255, 870);
             this.ResumeLayout(false);
 
         }
