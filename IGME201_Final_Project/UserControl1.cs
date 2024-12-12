@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IGME201_Final_Project
 {
-    public partial class HomePage : UserControl
+    public partial class UserControl1 : UserControl
     {
-        public HomePage()
+        public UserControl1()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace IGME201_Final_Project
 {
-    partial class HomePage
+    partial class UserControl1
     {
         /// <summary> 
         /// Required designer variable.
@@ -207,7 +207,7 @@
             this.Title.Text = "Ritchie’s Fast Food";
             this.Title.Click += new System.EventHandler(this.label2_Click);
             // 
-            // HomePage
+            // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -227,7 +227,7 @@
             this.Controls.Add(this.Username);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.LoginPasswordTypeBox);
-            this.Name = "HomePage";
+            this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(1255, 870);
             this.ResumeLayout(false);
             this.PerformLayout();
