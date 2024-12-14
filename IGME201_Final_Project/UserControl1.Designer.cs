@@ -55,9 +55,10 @@
             // 
             loginConfirm.Font = new System.Drawing.Font("Berlin Sans FB", 18F);
             loginConfirm.ForeColor = System.Drawing.Color.DarkSlateGray;
-            loginConfirm.Location = new System.Drawing.Point(219, 654);
+            loginConfirm.Location = new System.Drawing.Point(195, 523);
+            loginConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             loginConfirm.Name = "loginConfirm";
-            loginConfirm.Size = new System.Drawing.Size(165, 57);
+            loginConfirm.Size = new System.Drawing.Size(147, 46);
             loginConfirm.TabIndex = 20;
             loginConfirm.Text = "Login";
             loginConfirm.UseVisualStyleBackColor = true;
@@ -67,9 +68,9 @@
             this.accQuestion.AutoSize = true;
             this.accQuestion.Font = new System.Drawing.Font("Berlin Sans FB", 36F);
             this.accQuestion.ForeColor = System.Drawing.Color.Cornsilk;
-            this.accQuestion.Location = new System.Drawing.Point(650, 255);
+            this.accQuestion.Location = new System.Drawing.Point(578, 204);
             this.accQuestion.Name = "accQuestion";
-            this.accQuestion.Size = new System.Drawing.Size(498, 78);
+            this.accQuestion.Size = new System.Drawing.Size(415, 66);
             this.accQuestion.TabIndex = 22;
             this.accQuestion.Text = "Create Account";
             this.accQuestion.Click += new System.EventHandler(this.accQuestion_Click);
@@ -79,9 +80,9 @@
             this.LoginTitle.AutoSize = true;
             this.LoginTitle.Font = new System.Drawing.Font("Berlin Sans FB", 36F);
             this.LoginTitle.ForeColor = System.Drawing.Color.Cornsilk;
-            this.LoginTitle.Location = new System.Drawing.Point(188, 255);
+            this.LoginTitle.Location = new System.Drawing.Point(167, 204);
             this.LoginTitle.Name = "LoginTitle";
-            this.LoginTitle.Size = new System.Drawing.Size(197, 78);
+            this.LoginTitle.Size = new System.Drawing.Size(165, 66);
             this.LoginTitle.TabIndex = 21;
             this.LoginTitle.Text = "Login";
             this.LoginTitle.Click += new System.EventHandler(this.LoginTitle_Click);
@@ -89,9 +90,10 @@
             // LoginUsernametxtbox
             // 
             this.LoginUsernametxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.LoginUsernametxtbox.Location = new System.Drawing.Point(156, 451);
+            this.LoginUsernametxtbox.Location = new System.Drawing.Point(139, 361);
+            this.LoginUsernametxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginUsernametxtbox.Name = "LoginUsernametxtbox";
-            this.LoginUsernametxtbox.Size = new System.Drawing.Size(307, 48);
+            this.LoginUsernametxtbox.Size = new System.Drawing.Size(273, 41);
             this.LoginUsernametxtbox.TabIndex = 19;
             this.LoginUsernametxtbox.TextChanged += new System.EventHandler(this.LoginUsernametxtbox_TextChanged);
             // 
@@ -100,9 +102,9 @@
             this.Username.AutoSize = true;
             this.Username.Font = new System.Drawing.Font("Berlin Sans FB", 18F);
             this.Username.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Username.Location = new System.Drawing.Point(146, 408);
+            this.Username.Location = new System.Drawing.Point(130, 326);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(167, 39);
+            this.Username.Size = new System.Drawing.Size(139, 33);
             this.Username.TabIndex = 18;
             this.Username.Text = "Username";
             // 
@@ -111,18 +113,19 @@
             this.Password.AutoSize = true;
             this.Password.Font = new System.Drawing.Font("Berlin Sans FB", 18F);
             this.Password.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Password.Location = new System.Drawing.Point(148, 512);
+            this.Password.Location = new System.Drawing.Point(132, 410);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(157, 39);
+            this.Password.Size = new System.Drawing.Size(133, 33);
             this.Password.TabIndex = 17;
             this.Password.Text = "Password";
             // 
             // LoginPasswordTypeBox
             // 
             this.LoginPasswordTypeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.LoginPasswordTypeBox.Location = new System.Drawing.Point(156, 563);
+            this.LoginPasswordTypeBox.Location = new System.Drawing.Point(139, 450);
+            this.LoginPasswordTypeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginPasswordTypeBox.Name = "LoginPasswordTypeBox";
-            this.LoginPasswordTypeBox.Size = new System.Drawing.Size(307, 48);
+            this.LoginPasswordTypeBox.Size = new System.Drawing.Size(273, 41);
             this.LoginPasswordTypeBox.TabIndex = 16;
             // 
             // UsernameCreateAccLbl
@@ -130,9 +133,9 @@
             this.UsernameCreateAccLbl.AutoSize = true;
             this.UsernameCreateAccLbl.Font = new System.Drawing.Font("Berlin Sans FB", 18F);
             this.UsernameCreateAccLbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.UsernameCreateAccLbl.Location = new System.Drawing.Point(756, 403);
+            this.UsernameCreateAccLbl.Location = new System.Drawing.Point(672, 322);
             this.UsernameCreateAccLbl.Name = "UsernameCreateAccLbl";
-            this.UsernameCreateAccLbl.Size = new System.Drawing.Size(167, 39);
+            this.UsernameCreateAccLbl.Size = new System.Drawing.Size(139, 33);
             this.UsernameCreateAccLbl.TabIndex = 23;
             this.UsernameCreateAccLbl.Text = "Username";
             this.UsernameCreateAccLbl.Click += new System.EventHandler(this.UsernameCreateAccLbl_Click);
@@ -142,37 +145,41 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 18F);
             this.label1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label1.Location = new System.Drawing.Point(756, 572);
+            this.label1.Location = new System.Drawing.Point(672, 458);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 39);
+            this.label1.Size = new System.Drawing.Size(133, 33);
             this.label1.TabIndex = 24;
             this.label1.Text = "Password";
             // 
             // CreateAccUsernametxtbox
             // 
             this.CreateAccUsernametxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.CreateAccUsernametxtbox.Location = new System.Drawing.Point(764, 451);
+            this.CreateAccUsernametxtbox.Location = new System.Drawing.Point(679, 361);
+            this.CreateAccUsernametxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CreateAccUsernametxtbox.Name = "CreateAccUsernametxtbox";
-            this.CreateAccUsernametxtbox.Size = new System.Drawing.Size(307, 48);
+            this.CreateAccUsernametxtbox.Size = new System.Drawing.Size(273, 41);
             this.CreateAccUsernametxtbox.TabIndex = 25;
             this.CreateAccUsernametxtbox.TextChanged += new System.EventHandler(this.CreateAccUsernametxtbox_TextChanged);
             // 
             // CreateAccPasswordtxtbox
             // 
             this.CreateAccPasswordtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.CreateAccPasswordtxtbox.Location = new System.Drawing.Point(764, 623);
+            this.CreateAccPasswordtxtbox.Location = new System.Drawing.Point(679, 498);
+            this.CreateAccPasswordtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CreateAccPasswordtxtbox.Name = "CreateAccPasswordtxtbox";
-            this.CreateAccPasswordtxtbox.Size = new System.Drawing.Size(307, 48);
+            this.CreateAccPasswordtxtbox.Size = new System.Drawing.Size(273, 41);
             this.CreateAccPasswordtxtbox.TabIndex = 26;
             this.CreateAccPasswordtxtbox.TextChanged += new System.EventHandler(this.CreateAccPasswordtxtbox_TextChanged);
             // 
             // Cofirmbtn
             // 
+            this.Cofirmbtn.Enabled = false;
             this.Cofirmbtn.Font = new System.Drawing.Font("Berlin Sans FB", 18F);
             this.Cofirmbtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.Cofirmbtn.Location = new System.Drawing.Point(825, 769);
+            this.Cofirmbtn.Location = new System.Drawing.Point(733, 615);
+            this.Cofirmbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cofirmbtn.Name = "Cofirmbtn";
-            this.Cofirmbtn.Size = new System.Drawing.Size(165, 57);
+            this.Cofirmbtn.Size = new System.Drawing.Size(147, 46);
             this.Cofirmbtn.TabIndex = 27;
             this.Cofirmbtn.Text = "Confirm";
             this.Cofirmbtn.UseVisualStyleBackColor = true;
@@ -183,9 +190,9 @@
             this.UsernameCreateAcclabel.AutoSize = true;
             this.UsernameCreateAcclabel.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.UsernameCreateAcclabel.ForeColor = System.Drawing.Color.Cornsilk;
-            this.UsernameCreateAcclabel.Location = new System.Drawing.Point(758, 512);
+            this.UsernameCreateAcclabel.Location = new System.Drawing.Point(674, 410);
             this.UsernameCreateAcclabel.Name = "UsernameCreateAcclabel";
-            this.UsernameCreateAcclabel.Size = new System.Drawing.Size(373, 78);
+            this.UsernameCreateAcclabel.Size = new System.Drawing.Size(309, 69);
             this.UsernameCreateAcclabel.TabIndex = 28;
             this.UsernameCreateAcclabel.Text = "Must begin with a capital letter and \r\nbe between 3-16 characters\r\n\r\n";
             this.UsernameCreateAcclabel.Click += new System.EventHandler(this.UsernameCreateAcclabel_Click);
@@ -195,9 +202,9 @@
             this.CreatePasswordlbl.AutoSize = true;
             this.CreatePasswordlbl.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
             this.CreatePasswordlbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.CreatePasswordlbl.Location = new System.Drawing.Point(758, 680);
+            this.CreatePasswordlbl.Location = new System.Drawing.Point(674, 544);
             this.CreatePasswordlbl.Name = "CreatePasswordlbl";
-            this.CreatePasswordlbl.Size = new System.Drawing.Size(423, 78);
+            this.CreatePasswordlbl.Size = new System.Drawing.Size(350, 69);
             this.CreatePasswordlbl.TabIndex = 29;
             this.CreatePasswordlbl.Text = "Must be at least 8 characters and include \r\nat least one letter, number, and spec" +
     "ial \r\ncharacter";
@@ -207,9 +214,9 @@
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Berlin Sans FB", 48F);
             this.Title.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Title.Location = new System.Drawing.Point(237, 49);
+            this.Title.Location = new System.Drawing.Point(211, 39);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(775, 105);
+            this.Title.Size = new System.Drawing.Size(647, 88);
             this.Title.TabIndex = 30;
             this.Title.Text = "Ritchie’s Fast Food";
             this.Title.Click += new System.EventHandler(this.label2_Click);
@@ -224,7 +231,7 @@
             // 
             // UserControl1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
             this.Controls.Add(this.label1);
@@ -242,8 +249,9 @@
             this.Controls.Add(this.Username);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.LoginPasswordTypeBox);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(1256, 871);
+            this.Size = new System.Drawing.Size(1116, 697);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.createAcctUsernameError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.createAcctPasswordError)).EndInit();

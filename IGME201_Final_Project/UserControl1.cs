@@ -12,6 +12,8 @@ namespace IGME201_Final_Project
 {
     public partial class UserControl1 : UserControl
     {
+        public bool usernameValid = false;
+        public bool passwordValid = false;
         public UserControl1()
         {
             InitializeComponent();
@@ -52,10 +54,21 @@ namespace IGME201_Final_Project
             if ((CreateAccUsernametxtbox.Text.Length < 3) || (CreateAccUsernametxtbox.Text.Length > 16) || (Char.IsLower(CreateAccUsernametxtbox.Text, 0)) || (Char.IsNumber(CreateAccUsernametxtbox.Text, 0)) || (!Char.IsLetterOrDigit(CreateAccUsernametxtbox.Text, 0)))
             {
                 createAcctUsernameError.SetError(this.CreateAccUsernametxtbox, "Must begin with a capital letter and be between 3-16 characters");
+                usernameValid = false;
             }
             else
             {
                 createAcctUsernameError.Clear();
+                usernameValid = true;
+            }
+
+            if (usernameValid && passwordValid)
+            {
+                Cofirmbtn.Enabled = true;
+            }
+            else
+            {
+                Cofirmbtn.Enabled = false;
             }
         }
 
@@ -69,10 +82,20 @@ namespace IGME201_Final_Project
             if ((CreateAccPasswordtxtbox.Text.Length < 8) || (CreateAccPasswordtxtbox.Text.Any(c => char.IsLetter(c)) == false) || (CreateAccPasswordtxtbox.Text.Any(c => char.IsDigit(c)) == false) || (CreateAccPasswordtxtbox.Text.Any(c => !char.IsLetterOrDigit(c)) == false))
             {
                 createAcctPasswordError.SetError(this.CreateAccPasswordtxtbox, "Must be at least 8 characters and include at least one letter, number, and special character");
+                passwordValid = false;
             }
             else
             {
                 createAcctPasswordError.Clear();
+                passwordValid = true;
+            }
+
+            if (usernameValid && passwordValid)
+            {
+                Cofirmbtn.Enabled = true;
+            } else
+            {
+                Cofirmbtn.Enabled= false;
             }
         }
 
