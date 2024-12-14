@@ -61,5 +61,10 @@ namespace IGME201_Final_Project
         {
 
         }
+
+        private void UserControl2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

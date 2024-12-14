@@ -21,5 +21,10 @@ namespace IGME201_Final_Project
         {
 
         }
+
+        private void UserControl5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -48,55 +48,59 @@
             this.CheckoutTitle.AutoSize = true;
             this.CheckoutTitle.Font = new System.Drawing.Font("Berlin Sans FB", 48F);
             this.CheckoutTitle.ForeColor = System.Drawing.Color.Cornsilk;
-            this.CheckoutTitle.Location = new System.Drawing.Point(283, 28);
-            this.CheckoutTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CheckoutTitle.Location = new System.Drawing.Point(424, 43);
             this.CheckoutTitle.Name = "CheckoutTitle";
-            this.CheckoutTitle.Size = new System.Drawing.Size(283, 71);
+            this.CheckoutTitle.Size = new System.Drawing.Size(425, 105);
             this.CheckoutTitle.TabIndex = 33;
             this.CheckoutTitle.Text = "Checkout";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox1.Location = new System.Drawing.Point(53, 171);
+            this.textBox1.Location = new System.Drawing.Point(80, 263);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 31);
+            this.textBox1.Size = new System.Drawing.Size(214, 43);
             this.textBox1.TabIndex = 34;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox2.Location = new System.Drawing.Point(239, 171);
+            this.textBox2.Location = new System.Drawing.Point(358, 263);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(144, 31);
+            this.textBox2.Size = new System.Drawing.Size(214, 43);
             this.textBox2.TabIndex = 35;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox3.Location = new System.Drawing.Point(53, 258);
+            this.textBox3.Location = new System.Drawing.Point(80, 397);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(330, 31);
+            this.textBox3.Size = new System.Drawing.Size(493, 43);
             this.textBox3.TabIndex = 36;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox4.Location = new System.Drawing.Point(53, 345);
+            this.textBox4.Location = new System.Drawing.Point(80, 531);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(86, 31);
+            this.textBox4.Size = new System.Drawing.Size(127, 43);
             this.textBox4.TabIndex = 37;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox5.Location = new System.Drawing.Point(307, 345);
+            this.textBox5.Location = new System.Drawing.Point(460, 531);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(76, 31);
+            this.textBox5.Size = new System.Drawing.Size(112, 43);
             this.textBox5.TabIndex = 38;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
@@ -105,9 +109,10 @@
             this.fNamelbl.AutoSize = true;
             this.fNamelbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.fNamelbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.fNamelbl.Location = new System.Drawing.Point(50, 140);
+            this.fNamelbl.Location = new System.Drawing.Point(75, 215);
+            this.fNamelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fNamelbl.Name = "fNamelbl";
-            this.fNamelbl.Size = new System.Drawing.Size(115, 24);
+            this.fNamelbl.Size = new System.Drawing.Size(162, 35);
             this.fNamelbl.TabIndex = 39;
             this.fNamelbl.Text = "First Name";
             // 
@@ -116,9 +121,10 @@
             this.lNamelbl.AutoSize = true;
             this.lNamelbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.lNamelbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lNamelbl.Location = new System.Drawing.Point(235, 140);
+            this.lNamelbl.Location = new System.Drawing.Point(352, 215);
+            this.lNamelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lNamelbl.Name = "lNamelbl";
-            this.lNamelbl.Size = new System.Drawing.Size(113, 24);
+            this.lNamelbl.Size = new System.Drawing.Size(162, 35);
             this.lNamelbl.TabIndex = 40;
             this.lNamelbl.Text = "Last Name";
             // 
@@ -127,9 +133,10 @@
             this.CardNumlbl.AutoSize = true;
             this.CardNumlbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.CardNumlbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.CardNumlbl.Location = new System.Drawing.Point(50, 231);
+            this.CardNumlbl.Location = new System.Drawing.Point(75, 355);
+            this.CardNumlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CardNumlbl.Name = "CardNumlbl";
-            this.CardNumlbl.Size = new System.Drawing.Size(138, 24);
+            this.CardNumlbl.Size = new System.Drawing.Size(201, 35);
             this.CardNumlbl.TabIndex = 41;
             this.CardNumlbl.Text = "Card Number";
             // 
@@ -138,29 +145,33 @@
             this.ExpLbl.AutoSize = true;
             this.ExpLbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.ExpLbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.ExpLbl.Location = new System.Drawing.Point(50, 318);
+            this.ExpLbl.Location = new System.Drawing.Point(75, 489);
+            this.ExpLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExpLbl.Name = "ExpLbl";
-            this.ExpLbl.Size = new System.Drawing.Size(158, 24);
+            this.ExpLbl.Size = new System.Drawing.Size(352, 35);
             this.ExpLbl.TabIndex = 42;
-            this.ExpLbl.Text = "Expiration Date";
+            this.ExpLbl.Text = "Expiration Date (MM/YY)";
+            this.ExpLbl.Click += new System.EventHandler(this.ExpLbl_Click);
             // 
             // CVClbl
             // 
             this.CVClbl.AutoSize = true;
             this.CVClbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.CVClbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.CVClbl.Location = new System.Drawing.Point(303, 318);
+            this.CVClbl.Location = new System.Drawing.Point(454, 489);
+            this.CVClbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CVClbl.Name = "CVClbl";
-            this.CVClbl.Size = new System.Drawing.Size(50, 24);
+            this.CVClbl.Size = new System.Drawing.Size(73, 35);
             this.CVClbl.TabIndex = 43;
             this.CVClbl.Text = "CVC";
             // 
             // PurchaseConfirmbtn
             // 
             this.PurchaseConfirmbtn.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.PurchaseConfirmbtn.Location = new System.Drawing.Point(575, 440);
+            this.PurchaseConfirmbtn.Location = new System.Drawing.Point(862, 677);
+            this.PurchaseConfirmbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PurchaseConfirmbtn.Name = "PurchaseConfirmbtn";
-            this.PurchaseConfirmbtn.Size = new System.Drawing.Size(130, 39);
+            this.PurchaseConfirmbtn.Size = new System.Drawing.Size(195, 60);
             this.PurchaseConfirmbtn.TabIndex = 44;
             this.PurchaseConfirmbtn.Text = "Confirm";
             this.PurchaseConfirmbtn.UseVisualStyleBackColor = true;
@@ -171,16 +182,17 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.label6.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label6.Location = new System.Drawing.Point(558, 154);
+            this.label6.Location = new System.Drawing.Point(837, 237);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(177, 48);
+            this.label6.Size = new System.Drawing.Size(250, 70);
             this.label6.TabIndex = 45;
             this.label6.Text = "Total Holder \r\ndelete when done";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // UserControl4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
             this.Controls.Add(this.label6);
@@ -196,9 +208,8 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.CheckoutTitle);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControl4";
-            this.Size = new System.Drawing.Size(837, 566);
+            this.Size = new System.Drawing.Size(1256, 871);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -127,14 +127,14 @@ namespace IGME201_Final_Project
         {
             //cardnum
             String input = textBox3.Text;
-            if (input.Length > 15 && input.All(char.IsDigit))
+            if (input.Length == 16 && input.All(char.IsDigit))
             {
                 errorProvider.SetError(textBox3, "");
                 CardNum = true;
             }
             else
             {
-                errorProvider.SetError(textBox3, "Must be at least 15 digits");
+                errorProvider.SetError(textBox3, "Must be 16 digits");
                 CardNum = false;
             }
         }
@@ -143,14 +143,14 @@ namespace IGME201_Final_Project
         {
             //ExpDate
             String input = textBox4.Text;
-            if (input.Length > 4 && input.Contains("/"))
+            if (input.Length == 5 && input.Contains("/"))
             {
                 errorProvider.SetError(textBox4, "");
                 ExpDate = true;
             }
             else
             {
-                errorProvider.SetError(textBox4, "Must be at valid date using /");
+                errorProvider.SetError(textBox4, "Must be at valid date in format MM/YY");
                 ExpDate = false;
             }
         }
@@ -159,16 +159,21 @@ namespace IGME201_Final_Project
         {
             //CVC
             String input = textBox5.Text;
-            if (input.Length > 2 && input.All(char.IsDigit))
+            if (input.Length == 3 && input.All(char.IsDigit))
             {
                 errorProvider.SetError(textBox5, "");
                 CVC = true;
             }
             else
             {
-                errorProvider.SetError(textBox5, "Must be at least 3 digits");
+                errorProvider.SetError(textBox5, "Must be 3 digits");
                 CVC = false;
             }
+        }
+
+        private void ExpLbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

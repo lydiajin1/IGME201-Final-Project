@@ -36,23 +36,22 @@
             this.MenuTitle.AutoSize = true;
             this.MenuTitle.Font = new System.Drawing.Font("Berlin Sans FB", 48F);
             this.MenuTitle.ForeColor = System.Drawing.Color.Cornsilk;
-            this.MenuTitle.Location = new System.Drawing.Point(321, 32);
-            this.MenuTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuTitle.Location = new System.Drawing.Point(482, 49);
             this.MenuTitle.Name = "MenuTitle";
-            this.MenuTitle.Size = new System.Drawing.Size(178, 71);
+            this.MenuTitle.Size = new System.Drawing.Size(269, 105);
             this.MenuTitle.TabIndex = 31;
             this.MenuTitle.Text = "Menu";
             this.MenuTitle.Click += new System.EventHandler(this.MenuTitle_Click);
             // 
             // UserControl2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
             this.Controls.Add(this.MenuTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(837, 566);
+            this.Size = new System.Drawing.Size(1256, 871);
+            this.Load += new System.EventHandler(this.UserControl2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
