@@ -10,7 +10,7 @@ namespace IGME201_Final_Project
     {
         string size;
 
-        public DrinkItem(string size,int price, string name, string type) : base(price, name, type)
+        public DrinkItem(string size,int price, string name, string type) : base(price, name)
         {
             this.size = size;
         }
