@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IGME201_Final_Project
 {
@@ -15,11 +16,26 @@ namespace IGME201_Final_Project
         public UserControl3()
         {
             InitializeComponent();
+            
+
         }
 
         private void MenuTitle_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            
+        }
+
+
     }
 }
