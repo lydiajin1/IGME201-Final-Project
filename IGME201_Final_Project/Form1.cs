@@ -12,9 +12,28 @@ namespace IGME201_Final_Project
 {
     public partial class Form1 : Form
     {
+        public static Form1 instance;
+        public UsersInfo userInfo;
+        public string currentUser;
+        public string[][] currentInfo;
+        public Button menuBtn;
+        public Button cartBtn;
+        public Button checkoutBtn;
+
+
         public Form1()
         {
+
             InitializeComponent();
+            instance = this;
+            userInfo = new UsersInfo();
+            userInfo.LoadUsers();
+            menuBtn = Menubtn;
+            cartBtn = Cartbtn;
+            checkoutBtn = Checkoutbtn;
+            menuBtn.Enabled = false;
+            cartBtn.Enabled = false;
+            checkoutBtn.Enabled = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -74,7 +93,7 @@ namespace IGME201_Final_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-       
+        
         }
 
         private void Menubtn_Click(object sender, EventArgs e)

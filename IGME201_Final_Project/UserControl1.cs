@@ -12,7 +12,10 @@ namespace IGME201_Final_Project
 {
     public partial class UserControl1 : UserControl
     {
-        public bool usernameValid = false;
+        public static UserControl1 instance;
+
+
+            public bool usernameValid = false;
         public bool passwordValid = false;
         public UserControl1()
         {
@@ -31,7 +34,17 @@ namespace IGME201_Final_Project
 
         private void Cofirmbtn_Click(object sender, EventArgs e)
         {
-
+            if (passwordValid && usernameValid)
+            {
+                string[][] info = new string[2][];
+                info[0] = new string[] { CreateAccPasswordtxtbox.Text };
+                info[1] = new string[] { null,null,null,null,null};
+                Form1.instance.userInfo.users.Add(LoginUsernametxtbox.Text, info);
+                Form1.instance.currentInfo = Form1.instance.userInfo.users[LoginUsernametxtbox.Text];
+                Form1.instance.currentUser = LoginUsernametxtbox.Text;
+                Form1.instance.menuBtn.Enabled = true;
+            
+        }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -105,6 +118,31 @@ namespace IGME201_Final_Project
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginConfirm_Click_1(object sender, EventArgs e)
+        {
+            
+
+            if (Form1.instance.userInfo.users.ContainsKey(LoginUsernametxtbox.Text)) 
+
+            {
+               Form1.instance.currentInfo = Form1.instance.userInfo.users[LoginUsernametxtbox.Text];
+                if (Form1.instance.currentInfo[0][0] == LoginPasswordTypeBox.Text)
+                {
+                    Form1.instance.currentUser = LoginUsernametxtbox.Text;
+                    Form1.instance.menuBtn.Enabled = true;
+                }
+                
+            }
+            
+            
+            
+        }
+
+        private void LoginPasswordTypeBox_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -13,15 +13,23 @@ namespace IGME201_Final_Project
 {
     public partial class UserControl4 : UserControl
     {
-        public bool FirstName = false;
-        public bool LastName = false;
-        public bool CardNum = false;
-        public bool ExpDate = false;
-        public bool CVC = false;
+        public bool isFirstName = false;
+        public bool isLastName = false;
+        public bool isCardNum = false;
+        public bool isExpDate = false;
+        public bool isCVC = false;
 
         public UserControl4()
         {
             InitializeComponent();
+            if (Form1.instance.currentInfo[1][0] != null)
+            {
+                textBox1.Text = Form1.instance.currentInfo[1][0];
+                textBox2.Text = Form1.instance.currentInfo[1][1];
+                textBox3.Text = Form1.instance.currentInfo[1][2];
+                textBox4.Text = Form1.instance.currentInfo[1][3];
+                textBox5.Text = Form1.instance.currentInfo[1][4];
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,10 +80,18 @@ namespace IGME201_Final_Project
             confirmationDialog.Controls.Add(confirmationMessage);
             ErroDialog.Controls.Add(ErrornMessage);
 
-            if (FirstName && LastName && CardNum && ExpDate && CVC)
+            if (isFirstName && isLastName && isCardNum && isExpDate && isCVC)
             {
                 // Show the dialog modally if all are true
                 confirmationDialog.ShowDialog();
+                 Form1.instance.currentInfo[1][0] = textBox1.Text;
+               Form1.instance.currentInfo[1][1] = textBox2.Text  ;
+                Form1.instance.currentInfo[1][2] = textBox3.Text;
+                Form1.instance.currentInfo[1][3] = textBox4.Text;
+                Form1.instance.currentInfo[1][4] = textBox5.Text;
+                Form1.instance.userInfo.users[Form1.instance.currentUser] = Form1.instance.currentInfo;
+                Form1.instance.userInfo.SaveUsers();
+
             }
             else
             {
@@ -98,12 +114,12 @@ namespace IGME201_Final_Project
             if (input.Length > 0 && !input.All(char.IsDigit))
             {
                 errorProvider.SetError(textBox1, "");
-                FirstName = true; 
+                isFirstName = true; 
             }
             else
             {
                 errorProvider.SetError(textBox1, "Must be at least 1 letter");
-                FirstName = false; 
+                isFirstName = false; 
             }
         }
 
@@ -114,12 +130,12 @@ namespace IGME201_Final_Project
             if (input.Length > 0 && !input.All(char.IsDigit))
             {
                 errorProvider.SetError(textBox2, "");
-                LastName = true;
+                isLastName = true;
             }
             else
             {
                 errorProvider.SetError(textBox2, "Must be at least 1 letter");
-                LastName = false;
+                isLastName = false;
             }
         }
 
@@ -130,12 +146,12 @@ namespace IGME201_Final_Project
             if (input.Length == 16 && input.All(char.IsDigit))
             {
                 errorProvider.SetError(textBox3, "");
-                CardNum = true;
+                isCardNum = true;
             }
             else
             {
                 errorProvider.SetError(textBox3, "Must be 16 digits");
-                CardNum = false;
+                isCardNum = false;
             }
         }
 
@@ -146,12 +162,12 @@ namespace IGME201_Final_Project
             if (input.Length == 5 && input.Contains("/"))
             {
                 errorProvider.SetError(textBox4, "");
-                ExpDate = true;
+                isExpDate = true;
             }
             else
             {
                 errorProvider.SetError(textBox4, "Must be at valid date in format MM/YY");
-                ExpDate = false;
+                isExpDate = false;
             }
         }
 
@@ -162,16 +178,21 @@ namespace IGME201_Final_Project
             if (input.Length == 3 && input.All(char.IsDigit))
             {
                 errorProvider.SetError(textBox5, "");
-                CVC = true;
+                isCVC = true;
             }
             else
             {
                 errorProvider.SetError(textBox5, "Must be 3 digits");
-                CVC = false;
+                isCVC = false;
             }
         }
 
         private void ExpLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserControl4_Load(object sender, EventArgs e)
         {
 
         }

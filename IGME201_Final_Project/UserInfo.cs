@@ -1,13 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using static System.Formats.Asn1.AsnWriter;
 
 public class UserInfo
 {
+
 	public UserInfo()
 	{
         static Dictionary<string, string[][]> users;
     }
 
-	private void loadUsers()
+	private void LoadUsers()
 	{
         StreamReader sr = new StreamReader(@"..\..\..\Users.txt");
         string line = sr.ReadLine();
@@ -33,6 +39,12 @@ public class UserInfo
     }
     private void saveUsers()
     {
-
+    StreamWriter sw = new StreamWriter(@"..\..\..\users.txt", false);
+    foreach (KeyValuePair<string, string[][]> User in users)
+    {
+        // do something with entry.Value or entry.Key
+        sw.WriteLine($"{user.Key},{user.Value[0][0]},{user.Value[1][0]}:{user.Value[1][1]}:{user.Value[1][2]}:{user.Value[1][3]}");
     }
+    sw.Close();
+}
 }
