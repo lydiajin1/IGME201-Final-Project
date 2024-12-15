@@ -23,9 +23,8 @@ namespace IGME201_Final_Project
 
         public Form1()
         {
-
-            InitializeComponent();
             instance = this;
+            InitializeComponent();
             userInfo = new UsersInfo();
             userInfo.LoadUsers();
             menuBtn = Menubtn;
@@ -34,7 +33,8 @@ namespace IGME201_Final_Project
             menuBtn.Enabled = false;
             cartBtn.Enabled = false;
             checkoutBtn.Enabled = false;
-        }
+
+        }  
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

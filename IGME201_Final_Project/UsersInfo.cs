@@ -17,7 +17,8 @@ namespace IGME201_Final_Project
 
         public void LoadUsers()
         {
-            StreamReader sr = new StreamReader(@"..\..\..\Users.txt");
+            FileStream aFile = new FileStream(@"..\..\..\Users.txt", FileMode.OpenOrCreate);
+            StreamReader sr = new StreamReader(aFile);
             string line; while ((line = sr.ReadLine()) != null)
             {
                 string[] user = line.Split(',');

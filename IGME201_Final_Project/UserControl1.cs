@@ -39,8 +39,8 @@ namespace IGME201_Final_Project
                 string[][] info = new string[2][];
                 info[0] = new string[] { CreateAccPasswordtxtbox.Text };
                 info[1] = new string[] { null,null,null,null,null};
-                Form1.instance.userInfo.users.Add(LoginUsernametxtbox.Text, info);
-                Form1.instance.currentInfo = Form1.instance.userInfo.users[LoginUsernametxtbox.Text];
+               // Form1.instance.userInfo.users.Add(LoginUsernametxtbox.Text, info);
+                Form1.instance.currentInfo = Form1.instance.userInfo.users[CreateAccUsernametxtbox.Text];
                 Form1.instance.currentUser = LoginUsernametxtbox.Text;
                 Form1.instance.menuBtn.Enabled = true;
             

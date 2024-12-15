@@ -13,6 +13,7 @@ namespace IGME201_Final_Project
 {
     public partial class UserControl4 : UserControl
     {
+        public static UserControl4 instance;
         public bool isFirstName = false;
         public bool isLastName = false;
         public bool isCardNum = false;
@@ -22,14 +23,15 @@ namespace IGME201_Final_Project
         public UserControl4()
         {
             InitializeComponent();
-            if (Form1.instance.currentInfo[1][0] != null)
-            {
-                textBox1.Text = Form1.instance.currentInfo[1][0];
-                textBox2.Text = Form1.instance.currentInfo[1][1];
-                textBox3.Text = Form1.instance.currentInfo[1][2];
-                textBox4.Text = Form1.instance.currentInfo[1][3];
-                textBox5.Text = Form1.instance.currentInfo[1][4];
-            }
+            instance = this;
+            //if (Form1.instance.currentInfo[1][0] != null)
+            //{
+            //    textBox1.Text = Form1.instance.currentInfo[1][0];
+            //    textBox2.Text = Form1.instance.currentInfo[1][1];
+            //    textBox3.Text = Form1.instance.currentInfo[1][2];
+            //    textBox4.Text = Form1.instance.currentInfo[1][3];
+            //    textBox5.Text = Form1.instance.currentInfo[1][4];
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)
