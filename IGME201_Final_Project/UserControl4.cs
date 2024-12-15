@@ -89,8 +89,7 @@ namespace IGME201_Final_Project
                 Form1.instance.currentInfo[1][2] = textBox3.Text;
                 Form1.instance.currentInfo[1][3] = textBox4.Text;
                 Form1.instance.currentInfo[1][4] = textBox5.Text;
-                Form1.instance.userInfo.users[Form1.instance.currentUser] = Form1.instance.currentInfo;
-                Form1.instance.userInfo.SaveUsers();
+                Form1.instance.Save();
 
             }
             else

@@ -129,5 +129,11 @@ namespace IGME201_Final_Project
         {
 
         }
+
+        public void Save()
+        {
+           userInfo.users[currentUser] = currentInfo;
+            userInfo.SaveUsers();
+        }
     }
 }
