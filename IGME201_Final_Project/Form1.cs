@@ -30,7 +30,7 @@ namespace IGME201_Final_Project
             menuBtn = Menubtn;
             cartBtn = Cartbtn;
             checkoutBtn = Checkoutbtn;
-            menuBtn.Enabled = false;
+            menuBtn.Enabled = true; // flip this back in the future
             cartBtn.Enabled = false;
             checkoutBtn.Enabled = false;
 

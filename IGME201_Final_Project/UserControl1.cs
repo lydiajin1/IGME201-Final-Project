@@ -40,9 +40,9 @@ namespace IGME201_Final_Project
                 info[0] = new string[] { CreateAccPasswordtxtbox.Text };
                 info[1] = new string[] { null,null,null,null,null};
                // Form1.instance.userInfo.users.Add(LoginUsernametxtbox.Text, info);
-                Form1.instance.currentInfo = Form1.instance.userInfo.users[CreateAccUsernametxtbox.Text];
-                Form1.instance.currentUser = LoginUsernametxtbox.Text;
-                Form1.instance.menuBtn.Enabled = true;
+                //Form1.instance.currentInfo = Form1.instance.userInfo.users[CreateAccUsernametxtbox.Text];
+                //Form1.instance.currentUser = LoginUsernametxtbox.Text;
+                //Form1.instance.menuBtn.Enabled = true;
             
         }
         }
@@ -126,17 +126,17 @@ namespace IGME201_Final_Project
         {
             
 
-            if (Form1.instance.userInfo.users.ContainsKey(LoginUsernametxtbox.Text)) 
+            //if (Form1.instance.userInfo.users.ContainsKey(LoginUsernametxtbox.Text)) 
 
-            {
-               Form1.instance.currentInfo = Form1.instance.userInfo.users[LoginUsernametxtbox.Text];
-                if (Form1.instance.currentInfo[0][0] == LoginPasswordTypeBox.Text)
-                {
-                    Form1.instance.currentUser = LoginUsernametxtbox.Text;
-                    Form1.instance.menuBtn.Enabled = true;
-                }
+            //{
+               //Form1.instance.currentInfo = Form1.instance.userInfo.users[LoginUsernametxtbox.Text];
+                //if (Form1.instance.currentInfo[0][0] == LoginPasswordTypeBox.Text)
+                //{
+                    //Form1.instance.currentUser = LoginUsernametxtbox.Text;
+                    //Form1.instance.menuBtn.Enabled = true;
+                //}
                 
-            }
+            //}
             
             
             

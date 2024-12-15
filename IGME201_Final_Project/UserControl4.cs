@@ -86,12 +86,12 @@ namespace IGME201_Final_Project
             {
                 // Show the dialog modally if all are true
                 confirmationDialog.ShowDialog();
-                 Form1.instance.currentInfo[1][0] = textBox1.Text;
-               Form1.instance.currentInfo[1][1] = textBox2.Text  ;
-                Form1.instance.currentInfo[1][2] = textBox3.Text;
-                Form1.instance.currentInfo[1][3] = textBox4.Text;
-                Form1.instance.currentInfo[1][4] = textBox5.Text;
-                Form1.instance.Save();
+                 //Form1.instance.currentInfo[1][0] = textBox1.Text;
+               //Form1.instance.currentInfo[1][1] = textBox2.Text  ;
+                //Form1.instance.currentInfo[1][2] = textBox3.Text;
+                //Form1.instance.currentInfo[1][3] = textBox4.Text;
+                //Form1.instance.currentInfo[1][4] = textBox5.Text;
+                //Form1.instance.Save();
 
             }
             else
