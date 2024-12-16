@@ -30,7 +30,7 @@ namespace IGME201_Final_Project
             int total = 0;
             for (int i = 0; i < Form1.instance.fooditems.Count(); i++) {
                 
-                foodItem item = Form1.instance.fooditems[i];
+                FoodItems item = Form1.instance.fooditems[i];
                 if (item.getQuantity() != 0) {
                     Label label = new Label();
                     label.Text = "Name: " + item.name + " Price:" + (item.price * item.quantity).ToString() + " Quantity: " + item.quantity.ToString();
