@@ -147,6 +147,7 @@ namespace IGME201_Final_Project
         private void NumItems_TextChanged(object sender, EventArgs e)
         {
             Form1.instance.cartBtn.Enabled = true;
+            Form1.instance.checkoutBtn.Enabled = true;
         }
     }
 }

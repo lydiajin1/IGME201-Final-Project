@@ -132,7 +132,7 @@ namespace IGME201_Final_Project
             userControl21.Hide();
             userControl41.Hide();
             userControl31.BringToFront();
-
+            userControl31.loadCart();
         }
 
         private void Checkoutbtn_Click(object sender, EventArgs e)

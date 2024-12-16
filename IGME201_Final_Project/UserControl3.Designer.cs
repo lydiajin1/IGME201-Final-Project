@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             this.CartTitle = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.CartPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.totalLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CartTitle
@@ -42,63 +40,61 @@
             this.CartTitle.AutoSize = true;
             this.CartTitle.Font = new System.Drawing.Font("Berlin Sans FB", 48F);
             this.CartTitle.ForeColor = System.Drawing.Color.Cornsilk;
-            this.CartTitle.Location = new System.Drawing.Point(502, 31);
+            this.CartTitle.Location = new System.Drawing.Point(335, 20);
+            this.CartTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CartTitle.Name = "CartTitle";
-            this.CartTitle.Size = new System.Drawing.Size(220, 105);
+            this.CartTitle.Size = new System.Drawing.Size(146, 71);
             this.CartTitle.TabIndex = 32;
             this.CartTitle.Text = "Cart";
             // 
-            // panel1
+            // CartPanel
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.vScrollBar1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(166, 163);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(902, 658);
-            this.panel1.TabIndex = 33;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.CartPanel.BackColor = System.Drawing.Color.Snow;
+            this.CartPanel.Location = new System.Drawing.Point(89, 117);
+            this.CartPanel.Name = "CartPanel";
+            this.CartPanel.Size = new System.Drawing.Size(638, 261);
+            this.CartPanel.TabIndex = 33;
+            this.CartPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CartPanel_Paint);
             // 
-            // panel3
+            // label2
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel3.Location = new System.Drawing.Point(546, 132);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(195, 180);
-            this.panel3.TabIndex = 1;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.label2.AutoEllipsis = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 36F);
+            this.label2.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label2.Location = new System.Drawing.Point(291, 417);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 54);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Total";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // vScrollBar1
+            // totalLabel
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(866, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(24, 658);
-            this.vScrollBar1.TabIndex = 1;
-            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Location = new System.Drawing.Point(160, 132);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(206, 180);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.totalLabel.AutoEllipsis = true;
+            this.totalLabel.AutoSize = true;
+            this.totalLabel.Font = new System.Drawing.Font("Berlin Sans FB", 36F);
+            this.totalLabel.ForeColor = System.Drawing.Color.Cornsilk;
+            this.totalLabel.Location = new System.Drawing.Point(435, 417);
+            this.totalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(141, 54);
+            this.totalLabel.TabIndex = 36;
+            this.totalLabel.Text = "$0.00";
             // 
             // UserControl3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.totalLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.CartPanel);
             this.Controls.Add(this.CartTitle);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControl3";
-            this.Size = new System.Drawing.Size(1256, 871);
-            this.panel1.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(837, 566);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,9 +102,8 @@
 
         #endregion
         private System.Windows.Forms.Label CartTitle;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.FlowLayoutPanel CartPanel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label totalLabel;
     }
 }

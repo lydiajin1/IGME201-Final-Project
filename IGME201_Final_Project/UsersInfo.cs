@@ -17,7 +17,7 @@ namespace IGME201_Final_Project
 
         public void LoadUsers()
         {
-            FileStream aFile = new FileStream(@"..\..\..\Users.txt", FileMode.OpenOrCreate);
+            FileStream aFile = new FileStream(@"..\..\..\UsersInfo.txt", FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(aFile);
             string line; while ((line = sr.ReadLine()) != null)
             {
@@ -36,18 +36,30 @@ namespace IGME201_Final_Project
                     info[1] = new string[0]; // Placeholder if cardInfo is not valid
                 }
                                            
-                                             users.Add(username, info);  }
-                }
+                 users.Add(username, info); 
+            }
+            aFile.Close();
+            sr.Close();
+        }
 
 
         public void SaveUsers()
         {
-            StreamWriter sw = new StreamWriter(@"..\..\..\users.txt", false);
+            
+            StreamWriter sw = new StreamWriter(@"..\..\..\UsersInfo.txt", false);
             foreach (KeyValuePair<string, string[][]> userInfo in users)
             {
                 // do something with entry.Value or entry.Key
-                sw.WriteLine($"{userInfo.Key},{userInfo.Value[0][0]},{userInfo.Value[1][0]}:{userInfo.Value[1][1]}:{userInfo.Value[1][2]}:{userInfo.Value[1][3]}");
+                sw.Write($"{userInfo.Key},{userInfo.Value[0][0]},");
+                if (userInfo.Value[1][0] != null)
+                {
+                    sw.WriteLine($"{userInfo.Value[1][0]}:{userInfo.Value[1][1]}:{userInfo.Value[1][2]}:{userInfo.Value[1][3]}");
+                }
+                else
+                    sw.WriteLine($" ");
             }
+
+        
             sw.Close();
         }
     }
