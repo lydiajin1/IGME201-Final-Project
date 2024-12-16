@@ -62,7 +62,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 36F);
             this.label2.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label2.Location = new System.Drawing.Point(291, 417);
+            this.label2.Location = new System.Drawing.Point(282, 395);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 54);
@@ -76,7 +76,7 @@
             this.totalLabel.AutoSize = true;
             this.totalLabel.Font = new System.Drawing.Font("Berlin Sans FB", 36F);
             this.totalLabel.ForeColor = System.Drawing.Color.Cornsilk;
-            this.totalLabel.Location = new System.Drawing.Point(435, 417);
+            this.totalLabel.Location = new System.Drawing.Point(434, 395);
             this.totalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(141, 54);
@@ -92,7 +92,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CartPanel);
             this.Controls.Add(this.CartTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControl3";
             this.Size = new System.Drawing.Size(837, 566);
             this.ResumeLayout(false);

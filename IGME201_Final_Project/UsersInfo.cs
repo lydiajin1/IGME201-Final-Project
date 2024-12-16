@@ -50,17 +50,10 @@ namespace IGME201_Final_Project
             foreach (KeyValuePair<string, string[][]> userInfo in users)
             {
                 // do something with entry.Value or entry.Key
-                sw.Write($"{userInfo.Key},{userInfo.Value[0][0]},");
-                if (userInfo.Value[1][0] != null)
-                {
-                    sw.WriteLine($"{userInfo.Value[1][0]}:{userInfo.Value[1][1]}:{userInfo.Value[1][2]}:{userInfo.Value[1][3]}");
-                }
-                else
-                    sw.WriteLine($" ");
-            }
-
-        
-            sw.Close();
+                sw.WriteLine($"{userInfo.Key},{userInfo.Value[0][0]},{userInfo.Value[1][0]}:{userInfo.Value[1][1]}:{userInfo.Value[1][2]}:{userInfo.Value[1][3]}:{userInfo.Value[1][3]}");
+               
+            
         }
+            sw.Close();
     }
-}
+}}
