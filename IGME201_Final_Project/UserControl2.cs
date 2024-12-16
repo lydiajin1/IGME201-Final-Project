@@ -15,7 +15,10 @@ namespace IGME201_Final_Project
         public UserControl2()
         {
             InitializeComponent();
+
         }
+
+
 
         private void CreateAcc_Click(object sender, EventArgs e)
         {
@@ -63,6 +66,16 @@ namespace IGME201_Final_Project
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void vScrollBar1_Scroll_1(object sender, ScrollEventArgs e)
         {
 
         }

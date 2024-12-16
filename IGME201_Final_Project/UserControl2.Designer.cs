@@ -29,37 +29,64 @@
         private void InitializeComponent()
         {
             this.MenuTitle = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.hamburgerContainer = new System.Windows.Forms.Panel();
             this.HamburgerAddBtn = new System.Windows.Forms.Button();
             this.HamburgerPrice = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HamburgerLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.PizzaPrice = new System.Windows.Forms.Label();
+            this.PizzaLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.SaladPrice = new System.Windows.Forms.Label();
+            this.SaladLabel = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.GarbagePlatePrice = new System.Windows.Forms.Label();
+            this.GarbagePlateLabel = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.FrenchFriesPrice = new System.Windows.Forms.Label();
+            this.FrenchFriesLabel = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.ChickenNuggetPrice = new System.Windows.Forms.Label();
+            this.ChickenNuggetLabel = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.LemonadePrice = new System.Windows.Forms.Label();
+            this.LemonadeLabel = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.SodaPrice = new System.Windows.Forms.Label();
+            this.SodaLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.E = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel.SuspendLayout();
             this.hamburgerContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuTitle
@@ -74,36 +101,40 @@
             this.MenuTitle.Text = "Menu";
             this.MenuTitle.Click += new System.EventHandler(this.MenuTitle_Click);
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanel
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.flowLayoutPanel1.Controls.Add(this.hamburgerContainer);
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.E);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(60, 170);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1134, 652);
-            this.flowLayoutPanel1.TabIndex = 32;
+            this.flowLayoutPanel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.flowLayoutPanel.Controls.Add(this.hamburgerContainer);
+            this.flowLayoutPanel.Controls.Add(this.panel1);
+            this.flowLayoutPanel.Controls.Add(this.panel2);
+            this.flowLayoutPanel.Controls.Add(this.panel3);
+            this.flowLayoutPanel.Controls.Add(this.panel4);
+            this.flowLayoutPanel.Controls.Add(this.panel5);
+            this.flowLayoutPanel.Controls.Add(this.panel6);
+            this.flowLayoutPanel.Controls.Add(this.panel7);
+            this.flowLayoutPanel.Location = new System.Drawing.Point(10, 172);
+            this.flowLayoutPanel.Name = "flowLayoutPanel";
+            this.flowLayoutPanel.Size = new System.Drawing.Size(1235, 638);
+            this.flowLayoutPanel.TabIndex = 32;
+            this.flowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // hamburgerContainer
             // 
             this.hamburgerContainer.BackColor = System.Drawing.SystemColors.Control;
+            this.hamburgerContainer.Controls.Add(this.pictureBox1);
             this.hamburgerContainer.Controls.Add(this.HamburgerAddBtn);
             this.hamburgerContainer.Controls.Add(this.HamburgerPrice);
-            this.hamburgerContainer.Controls.Add(this.pictureBox1);
             this.hamburgerContainer.Controls.Add(this.HamburgerLabel);
             this.hamburgerContainer.Location = new System.Drawing.Point(3, 3);
             this.hamburgerContainer.Name = "hamburgerContainer";
-            this.hamburgerContainer.Size = new System.Drawing.Size(371, 509);
+            this.hamburgerContainer.Size = new System.Drawing.Size(302, 312);
             this.hamburgerContainer.TabIndex = 3;
             // 
             // HamburgerAddBtn
             // 
-            this.HamburgerAddBtn.Location = new System.Drawing.Point(92, 423);
+            this.HamburgerAddBtn.Location = new System.Drawing.Point(94, 266);
             this.HamburgerAddBtn.Name = "HamburgerAddBtn";
-            this.HamburgerAddBtn.Size = new System.Drawing.Size(174, 67);
+            this.HamburgerAddBtn.Size = new System.Drawing.Size(111, 32);
             this.HamburgerAddBtn.TabIndex = 5;
             this.HamburgerAddBtn.Text = "Add to Cart";
             this.HamburgerAddBtn.UseVisualStyleBackColor = true;
@@ -111,28 +142,18 @@
             // HamburgerPrice
             // 
             this.HamburgerPrice.AutoSize = true;
-            this.HamburgerPrice.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HamburgerPrice.Location = new System.Drawing.Point(135, 366);
+            this.HamburgerPrice.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HamburgerPrice.Location = new System.Drawing.Point(123, 230);
             this.HamburgerPrice.Name = "HamburgerPrice";
-            this.HamburgerPrice.Size = new System.Drawing.Size(106, 44);
+            this.HamburgerPrice.Size = new System.Drawing.Size(39, 31);
             this.HamburgerPrice.TabIndex = 4;
-            this.HamburgerPrice.Text = "$7.99";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::IGME201_Final_Project.Properties.Resources.hamburger_img;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.HamburgerPrice.Text = "$5";
             // 
             // HamburgerLabel
             // 
             this.HamburgerLabel.AutoSize = true;
             this.HamburgerLabel.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HamburgerLabel.Location = new System.Drawing.Point(74, 13);
+            this.HamburgerLabel.Location = new System.Drawing.Point(46, 7);
             this.HamburgerLabel.Name = "HamburgerLabel";
             this.HamburgerLabel.Size = new System.Drawing.Size(214, 44);
             this.HamburgerLabel.TabIndex = 0;
@@ -141,188 +162,404 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(380, 3);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.PizzaPrice);
+            this.panel1.Controls.Add(this.PizzaLabel);
+            this.panel1.Location = new System.Drawing.Point(311, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(371, 509);
+            this.panel1.Size = new System.Drawing.Size(302, 312);
             this.panel1.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 423);
+            this.button1.Location = new System.Drawing.Point(94, 266);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 67);
+            this.button1.Size = new System.Drawing.Size(111, 32);
             this.button1.TabIndex = 5;
             this.button1.Text = "Add to Cart";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // PizzaPrice
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 366);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 44);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "$7.99";
+            this.PizzaPrice.AutoSize = true;
+            this.PizzaPrice.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PizzaPrice.Location = new System.Drawing.Point(126, 230);
+            this.PizzaPrice.Name = "PizzaPrice";
+            this.PizzaPrice.Size = new System.Drawing.Size(40, 31);
+            this.PizzaPrice.TabIndex = 4;
+            this.PizzaPrice.Text = "$4";
             // 
-            // pictureBox2
+            // PizzaLabel
             // 
-            this.pictureBox2.Image = global::IGME201_Final_Project.Properties.Resources.hamburger_img;
-            this.pictureBox2.Location = new System.Drawing.Point(34, 63);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(74, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(214, 44);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Hamburger";
+            this.PizzaLabel.AutoSize = true;
+            this.PizzaLabel.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PizzaLabel.Location = new System.Drawing.Point(96, 7);
+            this.PizzaLabel.Name = "PizzaLabel";
+            this.PizzaLabel.Size = new System.Drawing.Size(109, 44);
+            this.PizzaLabel.TabIndex = 0;
+            this.PizzaLabel.Text = "Pizza";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(757, 3);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.SaladPrice);
+            this.panel2.Controls.Add(this.SaladLabel);
+            this.panel2.Location = new System.Drawing.Point(619, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(371, 509);
+            this.panel2.Size = new System.Drawing.Size(302, 312);
             this.panel2.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(92, 423);
+            this.button2.Location = new System.Drawing.Point(94, 266);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 67);
+            this.button2.Size = new System.Drawing.Size(111, 32);
             this.button2.TabIndex = 5;
             this.button2.Text = "Add to Cart";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // SaladPrice
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(135, 366);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 44);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "$7.99";
+            this.SaladPrice.AutoSize = true;
+            this.SaladPrice.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaladPrice.Location = new System.Drawing.Point(127, 230);
+            this.SaladPrice.Name = "SaladPrice";
+            this.SaladPrice.Size = new System.Drawing.Size(40, 31);
+            this.SaladPrice.TabIndex = 4;
+            this.SaladPrice.Text = "$4";
             // 
-            // pictureBox3
+            // SaladLabel
             // 
-            this.pictureBox3.Image = global::IGME201_Final_Project.Properties.Resources.hamburger_img;
-            this.pictureBox3.Location = new System.Drawing.Point(34, 63);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(74, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(214, 44);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Hamburger";
+            this.SaladLabel.AutoSize = true;
+            this.SaladLabel.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaladLabel.Location = new System.Drawing.Point(92, 7);
+            this.SaladLabel.Name = "SaladLabel";
+            this.SaladLabel.Size = new System.Drawing.Size(113, 44);
+            this.SaladLabel.TabIndex = 0;
+            this.SaladLabel.Text = "Salad";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(3, 518);
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.GarbagePlatePrice);
+            this.panel3.Controls.Add(this.GarbagePlateLabel);
+            this.panel3.Location = new System.Drawing.Point(927, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(371, 509);
+            this.panel3.Size = new System.Drawing.Size(302, 312);
             this.panel3.TabIndex = 6;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(92, 423);
+            this.button3.Location = new System.Drawing.Point(94, 266);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(174, 67);
+            this.button3.Size = new System.Drawing.Size(111, 32);
             this.button3.TabIndex = 5;
             this.button3.Text = "Add to Cart";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // GarbagePlatePrice
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(135, 366);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 44);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "$7.99";
+            this.GarbagePlatePrice.AutoSize = true;
+            this.GarbagePlatePrice.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GarbagePlatePrice.Location = new System.Drawing.Point(126, 230);
+            this.GarbagePlatePrice.Name = "GarbagePlatePrice";
+            this.GarbagePlatePrice.Size = new System.Drawing.Size(40, 31);
+            this.GarbagePlatePrice.TabIndex = 4;
+            this.GarbagePlatePrice.Text = "$6";
+            // 
+            // GarbagePlateLabel
+            // 
+            this.GarbagePlateLabel.AutoSize = true;
+            this.GarbagePlateLabel.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GarbagePlateLabel.Location = new System.Drawing.Point(17, 7);
+            this.GarbagePlateLabel.Name = "GarbagePlateLabel";
+            this.GarbagePlateLabel.Size = new System.Drawing.Size(264, 44);
+            this.GarbagePlateLabel.TabIndex = 0;
+            this.GarbagePlateLabel.Text = "Garbage Plate";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.Control;
+            this.panel4.Controls.Add(this.pictureBox5);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.FrenchFriesPrice);
+            this.panel4.Controls.Add(this.FrenchFriesLabel);
+            this.panel4.Location = new System.Drawing.Point(3, 321);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(302, 312);
+            this.panel4.TabIndex = 7;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(94, 266);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(111, 32);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Add to Cart";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // FrenchFriesPrice
+            // 
+            this.FrenchFriesPrice.AutoSize = true;
+            this.FrenchFriesPrice.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FrenchFriesPrice.Location = new System.Drawing.Point(123, 230);
+            this.FrenchFriesPrice.Name = "FrenchFriesPrice";
+            this.FrenchFriesPrice.Size = new System.Drawing.Size(40, 31);
+            this.FrenchFriesPrice.TabIndex = 4;
+            this.FrenchFriesPrice.Text = "$2";
+            // 
+            // FrenchFriesLabel
+            // 
+            this.FrenchFriesLabel.AutoSize = true;
+            this.FrenchFriesLabel.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FrenchFriesLabel.Location = new System.Drawing.Point(46, 7);
+            this.FrenchFriesLabel.Name = "FrenchFriesLabel";
+            this.FrenchFriesLabel.Size = new System.Drawing.Size(214, 44);
+            this.FrenchFriesLabel.TabIndex = 0;
+            this.FrenchFriesLabel.Text = "French Fries";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.Control;
+            this.panel5.Controls.Add(this.pictureBox6);
+            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.ChickenNuggetPrice);
+            this.panel5.Controls.Add(this.ChickenNuggetLabel);
+            this.panel5.Location = new System.Drawing.Point(311, 321);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(302, 312);
+            this.panel5.TabIndex = 8;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(94, 266);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(111, 32);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Add to Cart";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // ChickenNuggetPrice
+            // 
+            this.ChickenNuggetPrice.AutoSize = true;
+            this.ChickenNuggetPrice.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChickenNuggetPrice.Location = new System.Drawing.Point(126, 230);
+            this.ChickenNuggetPrice.Name = "ChickenNuggetPrice";
+            this.ChickenNuggetPrice.Size = new System.Drawing.Size(39, 31);
+            this.ChickenNuggetPrice.TabIndex = 4;
+            this.ChickenNuggetPrice.Text = "$3";
+            // 
+            // ChickenNuggetLabel
+            // 
+            this.ChickenNuggetLabel.AutoSize = true;
+            this.ChickenNuggetLabel.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChickenNuggetLabel.Location = new System.Drawing.Point(3, 7);
+            this.ChickenNuggetLabel.Name = "ChickenNuggetLabel";
+            this.ChickenNuggetLabel.Size = new System.Drawing.Size(299, 44);
+            this.ChickenNuggetLabel.TabIndex = 0;
+            this.ChickenNuggetLabel.Text = "Chicken Nuggets";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.Control;
+            this.panel6.Controls.Add(this.pictureBox7);
+            this.panel6.Controls.Add(this.button6);
+            this.panel6.Controls.Add(this.LemonadePrice);
+            this.panel6.Controls.Add(this.LemonadeLabel);
+            this.panel6.Location = new System.Drawing.Point(619, 321);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(302, 312);
+            this.panel6.TabIndex = 9;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(94, 266);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(111, 32);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Add to Cart";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // LemonadePrice
+            // 
+            this.LemonadePrice.AutoSize = true;
+            this.LemonadePrice.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LemonadePrice.Location = new System.Drawing.Point(127, 230);
+            this.LemonadePrice.Name = "LemonadePrice";
+            this.LemonadePrice.Size = new System.Drawing.Size(40, 31);
+            this.LemonadePrice.TabIndex = 4;
+            this.LemonadePrice.Text = "$2";
+            // 
+            // LemonadeLabel
+            // 
+            this.LemonadeLabel.AutoSize = true;
+            this.LemonadeLabel.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LemonadeLabel.Location = new System.Drawing.Point(57, 7);
+            this.LemonadeLabel.Name = "LemonadeLabel";
+            this.LemonadeLabel.Size = new System.Drawing.Size(197, 44);
+            this.LemonadeLabel.TabIndex = 0;
+            this.LemonadeLabel.Text = "Lemonade";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.Control;
+            this.panel7.Controls.Add(this.pictureBox8);
+            this.panel7.Controls.Add(this.button7);
+            this.panel7.Controls.Add(this.SodaPrice);
+            this.panel7.Controls.Add(this.SodaLabel);
+            this.panel7.Location = new System.Drawing.Point(927, 321);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(302, 312);
+            this.panel7.TabIndex = 10;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(94, 266);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(111, 32);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Add to Cart";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // SodaPrice
+            // 
+            this.SodaPrice.AutoSize = true;
+            this.SodaPrice.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SodaPrice.Location = new System.Drawing.Point(132, 230);
+            this.SodaPrice.Name = "SodaPrice";
+            this.SodaPrice.Size = new System.Drawing.Size(34, 31);
+            this.SodaPrice.TabIndex = 4;
+            this.SodaPrice.Text = "$1";
+            // 
+            // SodaLabel
+            // 
+            this.SodaLabel.AutoSize = true;
+            this.SodaLabel.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SodaLabel.Location = new System.Drawing.Point(103, 7);
+            this.SodaLabel.Name = "SodaLabel";
+            this.SodaLabel.Size = new System.Drawing.Size(102, 44);
+            this.SodaLabel.TabIndex = 0;
+            this.SodaLabel.Text = "Soda";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::IGME201_Final_Project.Properties.Resources.hamburger_img;
+            this.pictureBox1.Location = new System.Drawing.Point(65, 57);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(170, 170);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::IGME201_Final_Project.Properties.Resources.pizza_img;
+            this.pictureBox2.Location = new System.Drawing.Point(65, 57);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 170);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::IGME201_Final_Project.Properties.Resources.salad_img;
+            this.pictureBox3.Location = new System.Drawing.Point(65, 57);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(170, 170);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::IGME201_Final_Project.Properties.Resources.hamburger_img;
-            this.pictureBox4.Location = new System.Drawing.Point(34, 63);
+            this.pictureBox4.Image = global::IGME201_Final_Project.Properties.Resources.garbagePlate_img;
+            this.pictureBox4.Location = new System.Drawing.Point(65, 57);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox4.Size = new System.Drawing.Size(170, 170);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
             // 
-            // label6
+            // pictureBox5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(74, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(214, 44);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Hamburger";
+            this.pictureBox5.Image = global::IGME201_Final_Project.Properties.Resources.fries_img;
+            this.pictureBox5.Location = new System.Drawing.Point(65, 57);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(170, 170);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 6;
+            this.pictureBox5.TabStop = false;
             // 
-            // E
+            // pictureBox6
             // 
-            this.E.AutoSize = true;
-            this.E.Location = new System.Drawing.Point(380, 515);
-            this.E.Name = "E";
-            this.E.Size = new System.Drawing.Size(78, 24);
-            this.E.TabIndex = 7;
-            this.E.Text = "Entrees";
+            this.pictureBox6.Image = global::IGME201_Final_Project.Properties.Resources.nuggets_img;
+            this.pictureBox6.Location = new System.Drawing.Point(65, 57);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(170, 170);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 6;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::IGME201_Final_Project.Properties.Resources.lemonade_img;
+            this.pictureBox7.Location = new System.Drawing.Point(65, 57);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(170, 170);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::IGME201_Final_Project.Properties.Resources.soda_img;
+            this.pictureBox8.Location = new System.Drawing.Point(65, 57);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(170, 170);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 6;
+            this.pictureBox8.TabStop = false;
             // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanel);
             this.Controls.Add(this.MenuTitle);
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(1256, 871);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.flowLayoutPanel.ResumeLayout(false);
             this.hamburgerContainer.ResumeLayout(false);
             this.hamburgerContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,27 +567,46 @@
 
         #endregion
         private System.Windows.Forms.Label MenuTitle;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
         private System.Windows.Forms.Panel hamburgerContainer;
         private System.Windows.Forms.Button HamburgerAddBtn;
         private System.Windows.Forms.Label HamburgerPrice;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label HamburgerLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label PizzaPrice;
+        private System.Windows.Forms.Label PizzaLabel;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label SaladPrice;
+        private System.Windows.Forms.Label SaladLabel;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label E;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label GarbagePlatePrice;
+        private System.Windows.Forms.Label GarbagePlateLabel;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label FrenchFriesPrice;
+        private System.Windows.Forms.Label FrenchFriesLabel;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label ChickenNuggetPrice;
+        private System.Windows.Forms.Label ChickenNuggetLabel;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label LemonadePrice;
+        private System.Windows.Forms.Label LemonadeLabel;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label SodaPrice;
+        private System.Windows.Forms.Label SodaLabel;
     }
 }
