@@ -32,9 +32,18 @@ namespace IGME201_Final_Project
                 
                 FoodItems item = Form1.instance.fooditems[i];
                 if (item.getQuantity() != 0) {
+                    int j = 10;
                     Label label = new Label();
                     label.Text = "Name: " + item.name + " Price:" + (item.price * item.quantity).ToString() + " Quantity: " + item.quantity.ToString();
+                    if (i == 0) {
+                        label.Location = new Point(107, 86);
+                    }
+                    label.Location = new Point(107, 86+j);
+                    label.AutoSize = true;
+
+                    label.Font = new Font("Calibri", 16);
                     total += (item.price * item.quantity);
+                    j += 10;
                 }
             }
             Label totalLabel = new Label();
