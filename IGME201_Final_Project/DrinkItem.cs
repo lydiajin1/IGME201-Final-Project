@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace IGME201_Final_Project
 {
-    internal class DrinkItem : FoodItem
+    internal class DrinkItem : foodItem
     {
         string size;
 
-        public DrinkItem(string size,int price, string name, string type) : base(price, name)
+        public DrinkItem(string size,int price, string name) : base(price, name)
         {
             this.size = size;
         }
