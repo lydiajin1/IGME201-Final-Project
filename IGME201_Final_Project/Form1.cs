@@ -21,7 +21,7 @@ namespace IGME201_Final_Project
         public System.Windows.Forms.Button menuBtn;
         public System.Windows.Forms.Button cartBtn;
         public System.Windows.Forms.Button checkoutBtn;
-        public List <FoodItem> foodItems;
+        public List<foodItem> fooditems = new List<foodItem> ();
 
         public Form1()
         {

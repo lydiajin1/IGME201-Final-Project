@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IGME201_Final_Project
 {
-    public class FoodItem
+    public class foodItem
     {
         /*Variables for the FoodItem class */
         public int price;
@@ -16,7 +16,7 @@ namespace IGME201_Final_Project
        
         
         /*constructor for the FoodItem class asking for the price, name, and type of the food item. */
-        public FoodItem(int price, string name) {
+        public foodItem(int price, string name) {
             this.price = price;
             this.name = name;
           
