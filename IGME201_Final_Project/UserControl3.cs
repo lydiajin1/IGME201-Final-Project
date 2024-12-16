@@ -16,7 +16,7 @@ namespace IGME201_Final_Project
         public UserControl3()
         {
             InitializeComponent();
-            Form1.instance.foodItems;
+            
 
         }
 
@@ -27,7 +27,18 @@ namespace IGME201_Final_Project
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            int total = 0;
+            for (int i = 0; i < Form1.instance.fooditems.Count(); i++) {
+                
+                foodItem item = Form1.instance.fooditems[i];
+                if (item.getQuantity() != 0) {
+                    Label label = new Label();
+                    label.Text = "Name: " + item.name + " Price:" + (item.price * item.quantity).ToString() + " Quantity: " + item.quantity.ToString();
+                    total += (item.price * item.quantity);
+                }
+            }
+            Label totalLabel = new Label();
+            totalLabel.Text = "Total: "+total.ToString();
         }
 
         
