@@ -79,5 +79,69 @@ namespace IGME201_Final_Project
         {
 
         }
+
+        private void HamburgerAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1.instance.fooditems[0].quantity ++;
+            int textVal = Convert.ToInt32(NumItems.Text);
+            textVal++;
+            NumItems.Text = textVal.ToString();
+        }
+
+        private void PizzaAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1.instance.fooditems[1].quantity++;
+            int textVal = Convert.ToInt32(NumItems.Text);
+            textVal++;
+            NumItems.Text = textVal.ToString();
+        }
+
+        private void SaladAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1.instance.fooditems[2].quantity++;
+            int textVal = Convert.ToInt32(NumItems.Text);
+            textVal++;
+            NumItems.Text = textVal.ToString();
+        }
+
+        private void GarbagePlateAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1.instance.fooditems[3].quantity++;
+            int textVal = Convert.ToInt32(NumItems.Text);
+            textVal++;
+            NumItems.Text = textVal.ToString();
+        }
+
+        private void FrenchFriesAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1.instance.fooditems[4].quantity++;
+            int textVal = Convert.ToInt32(NumItems.Text);
+            textVal++;
+            NumItems.Text = textVal.ToString();
+        }
+
+        private void NuggetsAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1.instance.fooditems[5].quantity++;
+            int textVal = Convert.ToInt32(NumItems.Text);
+            textVal++;
+            NumItems.Text = textVal.ToString();
+        }
+
+        private void LemonadeAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1.instance.fooditems[6].quantity++;
+            int textVal = Convert.ToInt32(NumItems.Text);
+            textVal++;
+            NumItems.Text = textVal.ToString();
+        }
+
+        private void SodaAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1.instance.fooditems[7].quantity++;
+            int textVal = Convert.ToInt32(NumItems.Text);
+            textVal++;
+            NumItems.Text = textVal.ToString();
+        }
     }
 }
