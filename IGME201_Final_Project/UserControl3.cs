@@ -16,8 +16,35 @@ namespace IGME201_Final_Project
         public UserControl3()
         {
             InitializeComponent();
-            //Form1.instance.fooditems;
+            
 
+        }
+        private void UserControl3_Load(object sender, EventArgs e) {
+            int total = 0;
+            for (int i = 0; i < Form1.instance.fooditems.Count(); i++)
+            {
+
+                FoodItems item = Form1.instance.fooditems[i];
+                if (item.getQuantity() != 0)
+                {
+                    int j = 10;
+                    Label label = new Label();
+                    label.Text = "Name: " + item.name + " Price:" + (item.price * item.quantity).ToString() + " Quantity: " + item.quantity.ToString();
+                    if (i == 0)
+                    {
+                        label.Location = new Point(107, 86);
+                    }
+                    label.Location = new Point(107, 86 + j);
+                    label.AutoSize = true;
+
+                    label.Font = new Font("Calibri", 16);
+                    this.Controls.Add(label);
+                    total += (item.price * item.quantity);
+                    j += 10;
+                }
+            }
+            Label totalLabel = new Label();
+            totalLabel.Text = "Total: " + total.ToString();
         }
 
         private void MenuTitle_Click(object sender, EventArgs e)
@@ -27,7 +54,7 @@ namespace IGME201_Final_Project
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         

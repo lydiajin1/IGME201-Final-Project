@@ -41,7 +41,7 @@ namespace IGME201_Final_Project
             menuBtn = Menubtn;
             cartBtn = Cartbtn;
             checkoutBtn = Checkoutbtn;
-            menuBtn.Enabled = true; // flip this back in the future
+            menuBtn.Enabled = false;
             cartBtn.Enabled = false;
             checkoutBtn.Enabled = false;
             fooditems.Add(burger);
