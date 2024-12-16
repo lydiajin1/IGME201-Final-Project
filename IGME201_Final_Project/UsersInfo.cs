@@ -10,7 +10,7 @@ namespace IGME201_Final_Project
     public class UsersInfo
     {
        public Dictionary<string, string[][]> users;
-        public void UserInfo()
+        public UsersInfo()
         {
              users = new Dictionary<string, string[][]>();
         }
