@@ -22,15 +22,15 @@ namespace IGME201_Final_Project
         public System.Windows.Forms.Button menuBtn;
         public System.Windows.Forms.Button cartBtn;
         public System.Windows.Forms.Button checkoutBtn;
-        public List<foodItem> fooditems = new List<foodItem>();
-        public foodItem burger = new foodItem (5,"Burger");
-        public foodItem pizza  = new foodItem(4,"Pizza");
-        public foodItem salad = new foodItem(4, "Salad");
-        public foodItem garbagePlate = new foodItem(6, "Garbage Plate");
-        public foodItem fries = new foodItem(2, "French Fries");
-        public foodItem nuggets = new foodItem(3, "Chicken Nuggets");
-        public foodItem soda = new DrinkItem("Medium", 1, "Soda");
-        public foodItem lemonade = new DrinkItem("Large", 2, "Lemonade");
+        public List<FoodItems> fooditems = new List<FoodItems>();
+        public FoodItems burger = new FoodItems(5,"Burger");
+        public FoodItems pizza  = new FoodItems(4,"Pizza");
+        public FoodItems salad = new FoodItems(4, "Salad");
+        public FoodItems garbagePlate = new FoodItems(6, "Garbage Plate");
+        public FoodItems fries = new FoodItems(2, "French Fries");
+        public FoodItems nuggets = new FoodItems(3, "Chicken Nuggets");
+        public FoodItems soda = new DrinkItems("Medium", 1, "Soda");
+        public FoodItems lemonade = new DrinkItems("Large", 2, "Lemonade");
 
         public Form1()
         {
