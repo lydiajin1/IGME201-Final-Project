@@ -116,6 +116,9 @@ namespace IGME201_Final_Project
 
         }
 
-        
+        private void totalLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

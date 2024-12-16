@@ -58,7 +58,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox1.Location = new System.Drawing.Point(53, 171);
+            this.textBox1.Location = new System.Drawing.Point(264, 156);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(144, 31);
             this.textBox1.TabIndex = 34;
@@ -67,7 +67,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox2.Location = new System.Drawing.Point(239, 171);
+            this.textBox2.Location = new System.Drawing.Point(450, 156);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(144, 31);
             this.textBox2.TabIndex = 35;
@@ -76,7 +76,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox3.Location = new System.Drawing.Point(53, 258);
+            this.textBox3.Location = new System.Drawing.Point(264, 243);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(330, 31);
             this.textBox3.TabIndex = 36;
@@ -85,7 +85,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox4.Location = new System.Drawing.Point(53, 345);
+            this.textBox4.Location = new System.Drawing.Point(264, 330);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(86, 31);
             this.textBox4.TabIndex = 37;
@@ -94,7 +94,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.textBox5.Location = new System.Drawing.Point(307, 345);
+            this.textBox5.Location = new System.Drawing.Point(518, 330);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(76, 31);
             this.textBox5.TabIndex = 38;
@@ -105,7 +105,7 @@
             this.fNamelbl.AutoSize = true;
             this.fNamelbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.fNamelbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.fNamelbl.Location = new System.Drawing.Point(50, 140);
+            this.fNamelbl.Location = new System.Drawing.Point(261, 125);
             this.fNamelbl.Name = "fNamelbl";
             this.fNamelbl.Size = new System.Drawing.Size(115, 24);
             this.fNamelbl.TabIndex = 39;
@@ -116,7 +116,7 @@
             this.lNamelbl.AutoSize = true;
             this.lNamelbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.lNamelbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lNamelbl.Location = new System.Drawing.Point(235, 140);
+            this.lNamelbl.Location = new System.Drawing.Point(446, 125);
             this.lNamelbl.Name = "lNamelbl";
             this.lNamelbl.Size = new System.Drawing.Size(113, 24);
             this.lNamelbl.TabIndex = 40;
@@ -127,7 +127,7 @@
             this.CardNumlbl.AutoSize = true;
             this.CardNumlbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.CardNumlbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.CardNumlbl.Location = new System.Drawing.Point(50, 231);
+            this.CardNumlbl.Location = new System.Drawing.Point(261, 216);
             this.CardNumlbl.Name = "CardNumlbl";
             this.CardNumlbl.Size = new System.Drawing.Size(138, 24);
             this.CardNumlbl.TabIndex = 41;
@@ -138,7 +138,7 @@
             this.ExpLbl.AutoSize = true;
             this.ExpLbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.ExpLbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.ExpLbl.Location = new System.Drawing.Point(50, 318);
+            this.ExpLbl.Location = new System.Drawing.Point(261, 303);
             this.ExpLbl.Name = "ExpLbl";
             this.ExpLbl.Size = new System.Drawing.Size(246, 24);
             this.ExpLbl.TabIndex = 42;
@@ -150,7 +150,7 @@
             this.CVClbl.AutoSize = true;
             this.CVClbl.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
             this.CVClbl.ForeColor = System.Drawing.Color.Cornsilk;
-            this.CVClbl.Location = new System.Drawing.Point(303, 318);
+            this.CVClbl.Location = new System.Drawing.Point(514, 303);
             this.CVClbl.Name = "CVClbl";
             this.CVClbl.Size = new System.Drawing.Size(50, 24);
             this.CVClbl.TabIndex = 43;
@@ -159,7 +159,7 @@
             // PurchaseConfirmbtn
             // 
             this.PurchaseConfirmbtn.Font = new System.Drawing.Font("Berlin Sans FB", 16F);
-            this.PurchaseConfirmbtn.Location = new System.Drawing.Point(575, 440);
+            this.PurchaseConfirmbtn.Location = new System.Drawing.Point(278, 445);
             this.PurchaseConfirmbtn.Name = "PurchaseConfirmbtn";
             this.PurchaseConfirmbtn.Size = new System.Drawing.Size(130, 39);
             this.PurchaseConfirmbtn.TabIndex = 44;
@@ -174,9 +174,8 @@
             this.label6.ForeColor = System.Drawing.Color.Cornsilk;
             this.label6.Location = new System.Drawing.Point(558, 154);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(177, 48);
+            this.label6.Size = new System.Drawing.Size(0, 24);
             this.label6.TabIndex = 45;
-            this.label6.Text = "Total Holder \r\ndelete when done";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // UserControl4
@@ -197,7 +196,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.CheckoutTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControl4";
             this.Size = new System.Drawing.Size(837, 566);
             this.Load += new System.EventHandler(this.UserControl4_Load);

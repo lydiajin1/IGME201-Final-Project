@@ -82,6 +82,7 @@
             this.totalLabel.Size = new System.Drawing.Size(141, 54);
             this.totalLabel.TabIndex = 36;
             this.totalLabel.Text = "$0.00";
+            this.totalLabel.Click += new System.EventHandler(this.totalLabel_Click);
             // 
             // UserControl3
             // 
