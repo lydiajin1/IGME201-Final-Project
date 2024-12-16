@@ -72,7 +72,6 @@
             this.SodaLabel = new System.Windows.Forms.Label();
             this.CartItemsTotalLabel = new System.Windows.Forms.Label();
             this.NumItems = new System.Windows.Forms.Label();
-            this.test = new System.Windows.Forms.Label();
             this.flowLayoutPanel.SuspendLayout();
             this.hamburgerContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -560,23 +559,11 @@
             this.NumItems.Text = "0";
             this.NumItems.TextChanged += new System.EventHandler(this.NumItems_TextChanged);
             // 
-            // test
-            // 
-            this.test.AutoSize = true;
-            this.test.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.test.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.test.Location = new System.Drawing.Point(151, 99);
-            this.test.Name = "test";
-            this.test.Size = new System.Drawing.Size(164, 31);
-            this.test.TabIndex = 35;
-            this.test.Text = "Items in cart:";
-            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
-            this.Controls.Add(this.test);
             this.Controls.Add(this.NumItems);
             this.Controls.Add(this.CartItemsTotalLabel);
             this.Controls.Add(this.flowLayoutPanel);
@@ -658,6 +645,5 @@
         private System.Windows.Forms.Label SodaLabel;
         private System.Windows.Forms.Label CartItemsTotalLabel;
         private System.Windows.Forms.Label NumItems;
-        private System.Windows.Forms.Label test;
     }
 }
