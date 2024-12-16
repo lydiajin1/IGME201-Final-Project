@@ -62,7 +62,7 @@ namespace IGME201_Final_Project
 
         }
 
-        private void UserControl2_Load(object sender, EventArgs e)
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
 
         }
