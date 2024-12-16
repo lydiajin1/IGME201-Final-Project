@@ -16,7 +16,7 @@ namespace IGME201_Final_Project
         public UserControl3()
         {
             InitializeComponent();
-            
+            Form1.instance.foodItems;
 
         }
 

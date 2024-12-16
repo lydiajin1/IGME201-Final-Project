@@ -7,19 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IGME201_Final_Project
 {
     public partial class Form1 : Form
     {
         public static Form1 instance;
+
         public UsersInfo userInfo;
         public string currentUser;
         public string[][] currentInfo;
-        public Button menuBtn;
-        public Button cartBtn;
-        public Button checkoutBtn;
-
+        public System.Windows.Forms.Button menuBtn;
+        public System.Windows.Forms.Button cartBtn;
+        public System.Windows.Forms.Button checkoutBtn;
+        public List <FoodItem> foodItems;
 
         public Form1()
         {
@@ -112,6 +114,7 @@ namespace IGME201_Final_Project
             userControl21.Hide();
             userControl41.Hide();
             userControl31.BringToFront();
+
         }
 
         private void Checkoutbtn_Click(object sender, EventArgs e)
@@ -122,7 +125,10 @@ namespace IGME201_Final_Project
             userControl31.Hide();
             userControl41.BringToFront();
             //comment
-
+            if (currentInfo[1][0] != null)
+            {
+                userControl41.uploadText();
+            }
         }
 
         private void userControl11_Load(object sender, EventArgs e)
