@@ -14,22 +14,11 @@ namespace IGME201_Final_Project
     {
         public static UserControl1 instance;
 
-
-            public bool usernameValid = false;
+        public bool usernameValid = false;
         public bool passwordValid = false;
         public UserControl1()
         {
             InitializeComponent();
-        }
-
-        private void loginConfirm_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void accQuestion_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Cofirmbtn_Click(object sender, EventArgs e)
@@ -64,16 +53,6 @@ namespace IGME201_Final_Project
             
         }
 
-        private void LoginUsernametxtbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LoginTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CreateAccUsernametxtbox_TextChanged(object sender, EventArgs e)
         {
             if ((CreateAccUsernametxtbox.Text.Length < 3) || (CreateAccUsernametxtbox.Text.Length > 16) || (Char.IsLower(CreateAccUsernametxtbox.Text, 0)) || (Char.IsNumber(CreateAccUsernametxtbox.Text, 0)) || (!Char.IsLetterOrDigit(CreateAccUsernametxtbox.Text, 0)))
@@ -95,11 +74,6 @@ namespace IGME201_Final_Project
             {
                 Cofirmbtn.Enabled = false;
             }
-        }
-
-        private void UsernameCreateAccLbl_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void CreateAccPasswordtxtbox_TextChanged(object sender, EventArgs e)
@@ -124,17 +98,7 @@ namespace IGME201_Final_Project
             }
         }
 
-        private void UsernameCreateAcclabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UserControl1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void loginConfirm_Click_1(object sender, EventArgs e)
+        private void loginConfirm_Click(object sender, EventArgs e)
         {
             
 
@@ -153,11 +117,6 @@ namespace IGME201_Final_Project
             
             
             
-        }
-
-        private void LoginPasswordTypeBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
