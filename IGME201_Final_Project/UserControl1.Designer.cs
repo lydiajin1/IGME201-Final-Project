@@ -62,7 +62,7 @@
             loginConfirm.TabIndex = 20;
             loginConfirm.Text = "Login";
             loginConfirm.UseVisualStyleBackColor = true;
-            loginConfirm.Click += new System.EventHandler(this.loginConfirm_Click_1);
+            loginConfirm.Click += new System.EventHandler(this.loginConfirm_Click);
             // 
             // accQuestion
             // 
@@ -75,7 +75,6 @@
             this.accQuestion.Size = new System.Drawing.Size(330, 54);
             this.accQuestion.TabIndex = 22;
             this.accQuestion.Text = "Create Account";
-            this.accQuestion.Click += new System.EventHandler(this.accQuestion_Click);
             // 
             // LoginTitle
             // 
@@ -88,7 +87,6 @@
             this.LoginTitle.Size = new System.Drawing.Size(134, 54);
             this.LoginTitle.TabIndex = 21;
             this.LoginTitle.Text = "Login";
-            this.LoginTitle.Click += new System.EventHandler(this.LoginTitle_Click);
             // 
             // LoginUsernametxtbox
             // 
@@ -98,7 +96,6 @@
             this.LoginUsernametxtbox.Name = "LoginUsernametxtbox";
             this.LoginUsernametxtbox.Size = new System.Drawing.Size(206, 35);
             this.LoginUsernametxtbox.TabIndex = 19;
-            this.LoginUsernametxtbox.TextChanged += new System.EventHandler(this.LoginUsernametxtbox_TextChanged);
             // 
             // Username
             // 
@@ -132,7 +129,6 @@
             this.LoginPasswordTypeBox.Name = "LoginPasswordTypeBox";
             this.LoginPasswordTypeBox.Size = new System.Drawing.Size(206, 35);
             this.LoginPasswordTypeBox.TabIndex = 16;
-            this.LoginPasswordTypeBox.TextChanged += new System.EventHandler(this.LoginPasswordTypeBox_TextChanged);
             // 
             // UsernameCreateAccLbl
             // 
@@ -145,7 +141,6 @@
             this.UsernameCreateAccLbl.Size = new System.Drawing.Size(114, 26);
             this.UsernameCreateAccLbl.TabIndex = 23;
             this.UsernameCreateAccLbl.Text = "Username";
-            this.UsernameCreateAccLbl.Click += new System.EventHandler(this.UsernameCreateAccLbl_Click);
             // 
             // label1
             // 
@@ -204,7 +199,6 @@
             this.UsernameCreateAcclabel.Size = new System.Drawing.Size(243, 54);
             this.UsernameCreateAcclabel.TabIndex = 28;
             this.UsernameCreateAcclabel.Text = "Must begin with a capital letter and \r\nbe between 3-16 characters\r\n\r\n";
-            this.UsernameCreateAcclabel.Click += new System.EventHandler(this.UsernameCreateAcclabel_Click);
             // 
             // CreatePasswordlbl
             // 
@@ -263,7 +257,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(837, 566);
-            this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.createAcctUsernameError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.createAcctPasswordError)).EndInit();
             this.ResumeLayout(false);
