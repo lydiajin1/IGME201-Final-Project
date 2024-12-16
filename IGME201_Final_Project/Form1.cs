@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,7 +22,15 @@ namespace IGME201_Final_Project
         public System.Windows.Forms.Button menuBtn;
         public System.Windows.Forms.Button cartBtn;
         public System.Windows.Forms.Button checkoutBtn;
-        public List<foodItem> fooditems = new List<foodItem> ();
+        public List<foodItem> fooditems = new List<foodItem>();
+        public foodItem burger = new foodItem (5,"Burger");
+        public foodItem pizza  = new foodItem(4,"Pizza");
+        public foodItem salad = new foodItem(4, "Salad");
+        public foodItem garbagePlate = new foodItem(6, "Garbage Plate");
+        public foodItem fries = new foodItem(2, "French Fries");
+        public foodItem nuggets = new foodItem(3, "Chicken Nuggets");
+        public foodItem soda = new DrinkItem("Medium", 1, "Soda");
+        public foodItem lemonade = new DrinkItem("Large", 2, "Lemonade");
 
         public Form1()
         {
@@ -35,6 +44,15 @@ namespace IGME201_Final_Project
             menuBtn.Enabled = true; // flip this back in the future
             cartBtn.Enabled = false;
             checkoutBtn.Enabled = false;
+            fooditems.Add(burger);
+            fooditems.Add(pizza);
+            fooditems.Add(salad);
+            fooditems.Add(garbagePlate);
+            fooditems.Add(fries);
+            fooditems.Add(nuggets);
+            fooditems.Add(soda);
+            fooditems.Add(lemonade);
+
 
         }  
 
