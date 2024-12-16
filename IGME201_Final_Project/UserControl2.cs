@@ -143,5 +143,10 @@ namespace IGME201_Final_Project
             textVal++;
             NumItems.Text = textVal.ToString();
         }
+
+        private void NumItems_TextChanged(object sender, EventArgs e)
+        {
+            Form1.instance.cartBtn.Enabled = true;
+        }
     }
 }

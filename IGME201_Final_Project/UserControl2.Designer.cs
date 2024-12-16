@@ -557,6 +557,7 @@
             this.NumItems.Size = new System.Drawing.Size(31, 31);
             this.NumItems.TabIndex = 34;
             this.NumItems.Text = "0";
+            this.NumItems.TextChanged += new System.EventHandler(this.NumItems_TextChanged);
             // 
             // UserControl2
             // 

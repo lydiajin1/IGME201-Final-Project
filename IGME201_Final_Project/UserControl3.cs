@@ -47,11 +47,6 @@ namespace IGME201_Final_Project
             totalLabel.Text = "Total: " + total.ToString();
         }
 
-        private void MenuTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             

@@ -47,7 +47,6 @@
             this.CartTitle.Size = new System.Drawing.Size(220, 105);
             this.CartTitle.TabIndex = 32;
             this.CartTitle.Text = "Cart";
-            this.CartTitle.Click += new System.EventHandler(this.MenuTitle_Click);
             // 
             // panel1
             // 
